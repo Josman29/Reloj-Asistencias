@@ -1,0 +1,14 @@
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.AssemblyReference.cache
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.SuggestedBindingRedirects.cache
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.frmPrincipal.resources
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.Resources.resources
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.GenerateResource.cache
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.CoreCompileInputs.cache
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\bin\Debug\Presentacion.xml
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.xml
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\RMEDINA\source\repos\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.ssPrincipal.resources
