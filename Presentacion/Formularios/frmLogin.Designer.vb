@@ -22,47 +22,68 @@ Partial Class frmLogin
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.txtUsuario = New System.Windows.Forms.TextBox()
-        Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.chkMostrar = New System.Windows.Forms.CheckBox()
-        Me.btnIngresar = New System.Windows.Forms.Button()
+        Me.gbLogin = New System.Windows.Forms.GroupBox()
+        Me.lblPassword = New System.Windows.Forms.Label()
+        Me.lblUsuario = New System.Windows.Forms.Label()
         Me.btnSalir = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.GroupBox1.SuspendLayout()
+        Me.btnIngresar = New System.Windows.Forms.Button()
+        Me.chkMostrar = New System.Windows.Forms.CheckBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtUsuario = New System.Windows.Forms.TextBox()
+        Me.gbLogin.SuspendLayout()
         Me.SuspendLayout()
         '
-        'GroupBox1
+        'gbLogin
         '
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.btnSalir)
-        Me.GroupBox1.Controls.Add(Me.btnIngresar)
-        Me.GroupBox1.Controls.Add(Me.chkMostrar)
-        Me.GroupBox1.Controls.Add(Me.txtPassword)
-        Me.GroupBox1.Controls.Add(Me.txtUsuario)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(247, 239)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Logeo"
+        Me.gbLogin.Controls.Add(Me.lblPassword)
+        Me.gbLogin.Controls.Add(Me.lblUsuario)
+        Me.gbLogin.Controls.Add(Me.btnSalir)
+        Me.gbLogin.Controls.Add(Me.btnIngresar)
+        Me.gbLogin.Controls.Add(Me.chkMostrar)
+        Me.gbLogin.Controls.Add(Me.txtPassword)
+        Me.gbLogin.Controls.Add(Me.txtUsuario)
+        Me.gbLogin.Location = New System.Drawing.Point(12, 10)
+        Me.gbLogin.Name = "gbLogin"
+        Me.gbLogin.Size = New System.Drawing.Size(247, 216)
+        Me.gbLogin.TabIndex = 0
+        Me.gbLogin.TabStop = False
+        Me.gbLogin.Text = "Logeo"
         '
-        'txtUsuario
+        'lblPassword
         '
-        Me.txtUsuario.Location = New System.Drawing.Point(44, 50)
-        Me.txtUsuario.Name = "txtUsuario"
-        Me.txtUsuario.Size = New System.Drawing.Size(154, 20)
-        Me.txtUsuario.TabIndex = 0
+        Me.lblPassword.AutoSize = True
+        Me.lblPassword.Location = New System.Drawing.Point(44, 82)
+        Me.lblPassword.Name = "lblPassword"
+        Me.lblPassword.Size = New System.Drawing.Size(53, 13)
+        Me.lblPassword.TabIndex = 6
+        Me.lblPassword.Text = "Password"
         '
-        'txtPassword
+        'lblUsuario
         '
-        Me.txtPassword.Location = New System.Drawing.Point(44, 101)
-        Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(154, 20)
-        Me.txtPassword.TabIndex = 1
+        Me.lblUsuario.AutoSize = True
+        Me.lblUsuario.Location = New System.Drawing.Point(44, 31)
+        Me.lblUsuario.Name = "lblUsuario"
+        Me.lblUsuario.Size = New System.Drawing.Size(43, 13)
+        Me.lblUsuario.TabIndex = 5
+        Me.lblUsuario.Text = "Usuario"
+        '
+        'btnSalir
+        '
+        Me.btnSalir.Location = New System.Drawing.Point(44, 180)
+        Me.btnSalir.Name = "btnSalir"
+        Me.btnSalir.Size = New System.Drawing.Size(154, 23)
+        Me.btnSalir.TabIndex = 4
+        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.UseVisualStyleBackColor = True
+        '
+        'btnIngresar
+        '
+        Me.btnIngresar.Location = New System.Drawing.Point(44, 151)
+        Me.btnIngresar.Name = "btnIngresar"
+        Me.btnIngresar.Size = New System.Drawing.Size(154, 23)
+        Me.btnIngresar.TabIndex = 3
+        Me.btnIngresar.Text = "Ingresar"
+        Me.btnIngresar.UseVisualStyleBackColor = True
         '
         'chkMostrar
         '
@@ -74,59 +95,38 @@ Partial Class frmLogin
         Me.chkMostrar.Text = "Mostrar Password"
         Me.chkMostrar.UseVisualStyleBackColor = True
         '
-        'btnIngresar
+        'txtPassword
         '
-        Me.btnIngresar.Location = New System.Drawing.Point(44, 151)
-        Me.btnIngresar.Name = "btnIngresar"
-        Me.btnIngresar.Size = New System.Drawing.Size(154, 23)
-        Me.btnIngresar.TabIndex = 3
-        Me.btnIngresar.Text = "Ingresar"
-        Me.btnIngresar.UseVisualStyleBackColor = True
+        Me.txtPassword.Location = New System.Drawing.Point(44, 101)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.Size = New System.Drawing.Size(154, 20)
+        Me.txtPassword.TabIndex = 1
         '
-        'btnSalir
+        'txtUsuario
         '
-        Me.btnSalir.Location = New System.Drawing.Point(44, 180)
-        Me.btnSalir.Name = "btnSalir"
-        Me.btnSalir.Size = New System.Drawing.Size(154, 23)
-        Me.btnSalir.TabIndex = 4
-        Me.btnSalir.Text = "Salir"
-        Me.btnSalir.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(44, 31)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 13)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Usuario"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(44, 82)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 13)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Password"
+        Me.txtUsuario.Location = New System.Drawing.Point(44, 50)
+        Me.txtUsuario.Name = "txtUsuario"
+        Me.txtUsuario.Size = New System.Drawing.Size(154, 20)
+        Me.txtUsuario.TabIndex = 0
         '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(271, 263)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.ClientSize = New System.Drawing.Size(271, 236)
+        Me.Controls.Add(Me.gbLogin)
         Me.Name = "frmLogin"
-        Me.Text = "frmLogin"
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.Text = "Logeo"
+        Me.gbLogin.ResumeLayout(False)
+        Me.gbLogin.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents gbLogin As GroupBox
+    Friend WithEvents lblPassword As Label
+    Friend WithEvents lblUsuario As Label
     Friend WithEvents btnSalir As Button
     Friend WithEvents btnIngresar As Button
     Friend WithEvents chkMostrar As CheckBox

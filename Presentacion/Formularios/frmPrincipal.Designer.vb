@@ -65,24 +65,24 @@ Partial Class frmPrincipal
         'tsmiIniciar
         '
         Me.tsmiIniciar.Name = "tsmiIniciar"
-        Me.tsmiIniciar.Size = New System.Drawing.Size(148, 22)
-        Me.tsmiIniciar.Text = "Iniciar Sesion"
+        Me.tsmiIniciar.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiIniciar.Text = "Iniciar sesión"
         '
         'tsmiCerrar
         '
         Me.tsmiCerrar.Name = "tsmiCerrar"
-        Me.tsmiCerrar.Size = New System.Drawing.Size(148, 22)
-        Me.tsmiCerrar.Text = "Cerrar Session"
+        Me.tsmiCerrar.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiCerrar.Text = "Cerrar sesión"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(145, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
         '
         'tsmiSalir
         '
         Me.tsmiSalir.Name = "tsmiSalir"
-        Me.tsmiSalir.Size = New System.Drawing.Size(148, 22)
+        Me.tsmiSalir.Size = New System.Drawing.Size(180, 22)
         Me.tsmiSalir.Text = "Salir"
         '
         'HerramientasToolStripMenuItem
@@ -108,7 +108,7 @@ Partial Class frmPrincipal
         'tsmiAcerca
         '
         Me.tsmiAcerca.Name = "tsmiAcerca"
-        Me.tsmiAcerca.Size = New System.Drawing.Size(135, 22)
+        Me.tsmiAcerca.Size = New System.Drawing.Size(180, 22)
         Me.tsmiAcerca.Text = "Acerca de..."
         '
         'ssPrincipal
