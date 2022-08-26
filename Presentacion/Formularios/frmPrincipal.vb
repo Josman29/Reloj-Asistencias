@@ -18,11 +18,11 @@ Public Class frmPrincipal
 #Region "Eventos"
 
     Private Sub tsmiOpciones_Click(sender As Object, e As EventArgs) Handles tsmiOpciones.Click
-        frmOpciones.ShowDialog()
+        AbrirFormulario(frmOpciones)
     End Sub
 
     Private Sub frmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        AbrirFormulario(frmOpciones)
+        AbrirFormulario(frmLogin)
     End Sub
 
 #End Region
