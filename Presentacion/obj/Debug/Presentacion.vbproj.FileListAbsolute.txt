@@ -28,3 +28,19 @@ C:\Users\Notebook\Source\Repos\Reloj-Asistencias\Presentacion\obj\Debug\Presenta
 C:\Users\Notebook\Source\Repos\Reloj-Asistencias\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\Notebook\Source\Repos\Reloj-Asistencias\Presentacion\obj\Debug\Presentacion.frmOpciones.resources
 C:\Users\Notebook\Source\Repos\Reloj-Asistencias\Presentacion\obj\Debug\Presentacion.frmLogin.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Presentacion.exe.config
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Presentacion.exe
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Presentacion.pdb
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Presentacion.xml
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.AssemblyReference.cache
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.SuggestedBindingRedirects.cache
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.frmLogin.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.frmOpciones.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.frmPrincipal.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.Resources.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.ssPrincipal.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.GenerateResource.cache
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.CoreCompileInputs.cache
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.exe
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.xml
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.pdb

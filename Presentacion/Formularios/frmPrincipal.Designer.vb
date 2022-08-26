@@ -37,7 +37,7 @@ Partial Class frmPrincipal
         Me.ssPrincipal = New System.Windows.Forms.StatusStrip()
         Me.tsslUsuariotext = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tsslNombreUsuario = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.pnlPrincipal = New System.Windows.Forms.Panel()
         Me.niPrincipal = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.cmsNotifyIcon = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.SalirToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -65,24 +65,24 @@ Partial Class frmPrincipal
         'tsmiIniciar
         '
         Me.tsmiIniciar.Name = "tsmiIniciar"
-        Me.tsmiIniciar.Size = New System.Drawing.Size(148, 22)
-        Me.tsmiIniciar.Text = "Iniciar Sesion"
+        Me.tsmiIniciar.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiIniciar.Text = "Iniciar sesión"
         '
         'tsmiCerrar
         '
         Me.tsmiCerrar.Name = "tsmiCerrar"
-        Me.tsmiCerrar.Size = New System.Drawing.Size(148, 22)
-        Me.tsmiCerrar.Text = "Cerrar Session"
+        Me.tsmiCerrar.Size = New System.Drawing.Size(142, 22)
+        Me.tsmiCerrar.Text = "Cerrar sesión"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(145, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(139, 6)
         '
         'tsmiSalir
         '
         Me.tsmiSalir.Name = "tsmiSalir"
-        Me.tsmiSalir.Size = New System.Drawing.Size(148, 22)
+        Me.tsmiSalir.Size = New System.Drawing.Size(142, 22)
         Me.tsmiSalir.Text = "Salir"
         '
         'HerramientasToolStripMenuItem
@@ -95,7 +95,7 @@ Partial Class frmPrincipal
         'tsmiOpciones
         '
         Me.tsmiOpciones.Name = "tsmiOpciones"
-        Me.tsmiOpciones.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiOpciones.Size = New System.Drawing.Size(124, 22)
         Me.tsmiOpciones.Text = "Opciones"
         '
         'tsmAyuda
@@ -134,13 +134,13 @@ Partial Class frmPrincipal
         Me.tsslNombreUsuario.Text = "NOMBRE USUARIO"
         Me.tsslNombreUsuario.Visible = False
         '
-        'Panel1
+        'pnlPrincipal
         '
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 24)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(653, 392)
-        Me.Panel1.TabIndex = 2
+        Me.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlPrincipal.Location = New System.Drawing.Point(0, 24)
+        Me.pnlPrincipal.Name = "pnlPrincipal"
+        Me.pnlPrincipal.Size = New System.Drawing.Size(653, 392)
+        Me.pnlPrincipal.TabIndex = 2
         '
         'niPrincipal
         '
@@ -166,7 +166,7 @@ Partial Class frmPrincipal
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(653, 438)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlPrincipal)
         Me.Controls.Add(Me.ssPrincipal)
         Me.Controls.Add(Me.msPrincipal)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -195,7 +195,7 @@ Partial Class frmPrincipal
     Friend WithEvents ssPrincipal As StatusStrip
     Friend WithEvents tsslUsuariotext As ToolStripStatusLabel
     Friend WithEvents tsslNombreUsuario As ToolStripStatusLabel
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents pnlPrincipal As Panel
     Friend WithEvents niPrincipal As NotifyIcon
     Friend WithEvents cmsNotifyIcon As ContextMenuStrip
     Friend WithEvents SalirToolStripMenuItem1 As ToolStripMenuItem

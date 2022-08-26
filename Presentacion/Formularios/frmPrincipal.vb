@@ -1,4 +1,9 @@
-﻿Public Class frmPrincipal
+﻿'Formulario Principal del proyecto
+'Autor: Medina Rodolfo
+'Descripción: Practica de Orquestación de Aplicaciones
+
+Public Class frmPrincipal
+#Region "Botones"
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles tsmiSalir.Click
         Me.Close()
     End Sub
@@ -7,7 +12,33 @@
         Me.Close()
     End Sub
 
+#End Region
+
+#Region "Eventos"
+
     Private Sub tsmiOpciones_Click(sender As Object, e As EventArgs) Handles tsmiOpciones.Click
         frmOpciones.ShowDialog()
     End Sub
+
+    Private Sub frmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AbrirFormulario(frmLogin)
+    End Sub
+
+    Public Sub AbrirFormulario(f As Form)
+        pnlPrincipal.Controls.Clear()
+        'f.TopLevel = False
+        'f.FormBorderStyle = FormBorderStyle.None
+        pnlPrincipal.Controls.Add(frmLogin)
+        ' f.Dock = DockStyle.Fill
+        f.Show()
+    End Sub
+
+    Private Sub tsmiIniciar_Click(sender As Object, e As EventArgs) Handles tsmiIniciar.Click
+        AbrirFormulario(frmLogin)
+    End Sub
+
+#End Region
+
+
+
 End Class

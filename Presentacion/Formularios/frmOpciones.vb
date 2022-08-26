@@ -2,13 +2,15 @@
 
 Public Class frmOpciones
 
-    Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
-        Me.Opacity = TrackBar1.Value / 100
-        Label1.Text = TrackBar1.Value & "%"
-
+    Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles tbNivel.Scroll
+        'Cambio de opacidad del formulario actual se utiliza el valor del trackbar en el momento que se scrollea y se divide por 100 para 
+        'lograr un valor correcto en opacidad que oscila entre 0 y 1
+        Me.Opacity = tbNivel.Value / 100
+        lblTrackbar.Text = tbNivel.Value & "%"
     End Sub
 
     Private Sub frmOpciones_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label1.Text = TrackBar1.Value & "%"
+        'Se muestran los valores iniciales trackbar al momento de crear el formulario
+        lblTrackbar.Text = tbNivel.Value & "%"
     End Sub
 End Class
