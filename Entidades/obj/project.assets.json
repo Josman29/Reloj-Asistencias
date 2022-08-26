@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\RMEDINA\\.nuget\\packages\\": {}
+    "C:\\Users\\Notebook\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RMEDINA\\source\\repos\\Reloj Asistencias\\Entidades\\Entidades.vbproj",
+      "projectUniqueName": "C:\\Users\\Notebook\\Source\\Repos\\Reloj-Asistencias\\Entidades\\Entidades.vbproj",
       "projectName": "Entidades",
-      "projectPath": "C:\\Users\\RMEDINA\\source\\repos\\Reloj Asistencias\\Entidades\\Entidades.vbproj",
-      "packagesPath": "C:\\Users\\RMEDINA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RMEDINA\\source\\repos\\Reloj Asistencias\\Entidades\\obj\\",
+      "projectPath": "C:\\Users\\Notebook\\Source\\Repos\\Reloj-Asistencias\\Entidades\\Entidades.vbproj",
+      "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Notebook\\Source\\Repos\\Reloj-Asistencias\\Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\RMEDINA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

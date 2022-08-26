@@ -30,6 +30,8 @@ Partial Class frmPrincipal
         Me.tsmiCerrar = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.tsmiSalir = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HerramientasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiOpciones = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmAyuda = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiAcerca = New System.Windows.Forms.ToolStripMenuItem()
         Me.ssPrincipal = New System.Windows.Forms.StatusStrip()
@@ -46,7 +48,7 @@ Partial Class frmPrincipal
         '
         'msPrincipal
         '
-        Me.msPrincipal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmArchivo, Me.tsmAyuda})
+        Me.msPrincipal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmArchivo, Me.HerramientasToolStripMenuItem, Me.tsmAyuda})
         Me.msPrincipal.Location = New System.Drawing.Point(0, 0)
         Me.msPrincipal.Name = "msPrincipal"
         Me.msPrincipal.Size = New System.Drawing.Size(653, 24)
@@ -82,6 +84,19 @@ Partial Class frmPrincipal
         Me.tsmiSalir.Name = "tsmiSalir"
         Me.tsmiSalir.Size = New System.Drawing.Size(148, 22)
         Me.tsmiSalir.Text = "Salir"
+        '
+        'HerramientasToolStripMenuItem
+        '
+        Me.HerramientasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiOpciones})
+        Me.HerramientasToolStripMenuItem.Name = "HerramientasToolStripMenuItem"
+        Me.HerramientasToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
+        Me.HerramientasToolStripMenuItem.Text = "Herramientas"
+        '
+        'tsmiOpciones
+        '
+        Me.tsmiOpciones.Name = "tsmiOpciones"
+        Me.tsmiOpciones.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiOpciones.Text = "Opciones"
         '
         'tsmAyuda
         '
@@ -184,4 +199,6 @@ Partial Class frmPrincipal
     Friend WithEvents niPrincipal As NotifyIcon
     Friend WithEvents cmsNotifyIcon As ContextMenuStrip
     Friend WithEvents SalirToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents HerramientasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents tsmiOpciones As ToolStripMenuItem
 End Class
