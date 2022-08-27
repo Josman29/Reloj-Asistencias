@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\RMEDINA\\.nuget\\packages\\": {}
+    "C:\\Users\\Notebook\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proyectos\\VB\\Reloj Asistencias\\Datos\\Datos.vbproj",
+      "projectUniqueName": "C:\\Users\\Notebook\\source\\repos\\Reloj-Asistencias\\Datos\\Datos.vbproj",
       "projectName": "Datos",
-      "projectPath": "D:\\Proyectos\\VB\\Reloj Asistencias\\Datos\\Datos.vbproj",
-      "packagesPath": "C:\\Users\\RMEDINA\\.nuget\\packages\\",
-      "outputPath": "D:\\Proyectos\\VB\\Reloj Asistencias\\Datos\\obj\\",
+      "projectPath": "C:\\Users\\Notebook\\source\\repos\\Reloj-Asistencias\\Datos\\Datos.vbproj",
+      "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Notebook\\source\\repos\\Reloj-Asistencias\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\RMEDINA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
