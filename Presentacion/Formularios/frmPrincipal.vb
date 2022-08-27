@@ -17,23 +17,30 @@ Public Class frmPrincipal
 #Region "Eventos"
 
     Private Sub tsmiOpciones_Click(sender As Object, e As EventArgs) Handles tsmiOpciones.Click
-        frmOpciones.ShowDialog()
+        'Utilizo la funcion abrir Formulario frmOpciones
+        AbrirFormulario(frmOpciones)
     End Sub
 
     Private Sub frmPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Utilizo la funcion abrir Formulario frmLogin
         AbrirFormulario(frmLogin)
     End Sub
 
     Public Sub AbrirFormulario(f As Form)
+        'Limpio los controles existentes en el panel
         pnlPrincipal.Controls.Clear()
-        'f.TopLevel = False
-        'f.FormBorderStyle = FormBorderStyle.None
+        'Establezco la propiedad toplevel del formualrio en falso para poder agregar un formulario dentro de otro
+        f.TopLevel = False
+        'Quito los bordes del formulario a abrir dentro del panel
+        f.FormBorderStyle = FormBorderStyle.None
+        'Agrego el control al panel
         pnlPrincipal.Controls.Add(frmLogin)
-        ' f.Dock = DockStyle.Fill
+        'Muestro el formulario en pantalla
         f.Show()
     End Sub
 
     Private Sub tsmiIniciar_Click(sender As Object, e As EventArgs) Handles tsmiIniciar.Click
+        'Utilizo la funcion abrir Formulario frmLogin
         AbrirFormulario(frmLogin)
     End Sub
 
