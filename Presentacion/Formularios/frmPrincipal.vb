@@ -3,12 +3,15 @@
 'Descripción: Practica de Orquestación de Aplicaciones
 
 Public Class frmPrincipal
+
 #Region "Botones"
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles tsmiSalir.Click
+        'Cierro aplicacion
         Me.Close()
     End Sub
 
     Private Sub SalirToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem1.Click
+        'Cierro aplicacion
         Me.Close()
     End Sub
 
@@ -34,9 +37,10 @@ Public Class frmPrincipal
         'Quito los bordes del formulario a abrir dentro del panel
         f.FormBorderStyle = FormBorderStyle.None
         'Agrego el control al panel
-        pnlPrincipal.Controls.Add(frmLogin)
+        pnlPrincipal.Controls.Add(f)
         'Muestro el formulario en pantalla
         f.Show()
+        f.Dock = DockStyle.Fill
     End Sub
 
     Private Sub tsmiIniciar_Click(sender As Object, e As EventArgs) Handles tsmiIniciar.Click

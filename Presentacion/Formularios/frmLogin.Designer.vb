@@ -30,11 +30,14 @@ Partial Class frmLogin
         Me.chkMostrar = New System.Windows.Forms.CheckBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.gbLogin.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'gbLogin
         '
+        Me.gbLogin.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.gbLogin.Controls.Add(Me.lblPassword)
         Me.gbLogin.Controls.Add(Me.lblUsuario)
         Me.gbLogin.Controls.Add(Me.btnSalir)
@@ -42,9 +45,9 @@ Partial Class frmLogin
         Me.gbLogin.Controls.Add(Me.chkMostrar)
         Me.gbLogin.Controls.Add(Me.txtPassword)
         Me.gbLogin.Controls.Add(Me.txtUsuario)
-        Me.gbLogin.Location = New System.Drawing.Point(12, 10)
+        Me.gbLogin.Location = New System.Drawing.Point(221, 94)
         Me.gbLogin.Name = "gbLogin"
-        Me.gbLogin.Size = New System.Drawing.Size(247, 216)
+        Me.gbLogin.Size = New System.Drawing.Size(247, 224)
         Me.gbLogin.TabIndex = 0
         Me.gbLogin.TabStop = False
         Me.gbLogin.Text = "Logeo"
@@ -110,16 +113,36 @@ Partial Class frmLogin
         Me.txtUsuario.Size = New System.Drawing.Size(154, 20)
         Me.txtUsuario.TabIndex = 0
         '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TableLayoutPanel1.ColumnCount = 3
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.TableLayoutPanel1.Controls.Add(Me.gbLogin, 1, 1)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(9, 8)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 3
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(691, 413)
+        Me.TableLayoutPanel1.TabIndex = 1
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(271, 236)
-        Me.Controls.Add(Me.gbLogin)
+        Me.ClientSize = New System.Drawing.Size(706, 429)
+        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Name = "frmLogin"
         Me.Text = "Logeo"
         Me.gbLogin.ResumeLayout(False)
         Me.gbLogin.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -132,4 +155,5 @@ Partial Class frmLogin
     Friend WithEvents chkMostrar As CheckBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents txtUsuario As TextBox
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
 End Class
