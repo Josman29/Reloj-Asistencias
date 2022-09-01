@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Notebook\\source\\repos\\Reloj-Asistencias\\Datos\\Datos.vbproj": {}
+    "D:\\Proyectos\\VB\\Reloj Asistencias\\Datos\\Datos.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Notebook\\source\\repos\\Reloj-Asistencias\\Datos\\Datos.vbproj": {
+    "D:\\Proyectos\\VB\\Reloj Asistencias\\Datos\\Datos.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Notebook\\source\\repos\\Reloj-Asistencias\\Datos\\Datos.vbproj",
+        "projectUniqueName": "D:\\Proyectos\\VB\\Reloj Asistencias\\Datos\\Datos.vbproj",
         "projectName": "Datos",
-        "projectPath": "C:\\Users\\Notebook\\source\\repos\\Reloj-Asistencias\\Datos\\Datos.vbproj",
-        "packagesPath": "C:\\Users\\Notebook\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Notebook\\source\\repos\\Reloj-Asistencias\\Datos\\obj\\",
+        "projectPath": "D:\\Proyectos\\VB\\Reloj Asistencias\\Datos\\Datos.vbproj",
+        "packagesPath": "C:\\Users\\RMEDINA\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyectos\\VB\\Reloj Asistencias\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Notebook\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RMEDINA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

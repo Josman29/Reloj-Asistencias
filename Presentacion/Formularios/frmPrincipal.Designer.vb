@@ -51,7 +51,7 @@ Partial Class frmPrincipal
         Me.msPrincipal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmArchivo, Me.HerramientasToolStripMenuItem, Me.tsmAyuda})
         Me.msPrincipal.Location = New System.Drawing.Point(0, 0)
         Me.msPrincipal.Name = "msPrincipal"
-        Me.msPrincipal.Size = New System.Drawing.Size(653, 24)
+        Me.msPrincipal.Size = New System.Drawing.Size(683, 24)
         Me.msPrincipal.TabIndex = 0
         Me.msPrincipal.Text = "MenuStrip1"
         '
@@ -64,25 +64,28 @@ Partial Class frmPrincipal
         '
         'tsmiIniciar
         '
+        Me.tsmiIniciar.Image = Global.RelojAsistencias.My.Resources.Resources.Login
         Me.tsmiIniciar.Name = "tsmiIniciar"
-        Me.tsmiIniciar.Size = New System.Drawing.Size(142, 22)
+        Me.tsmiIniciar.Size = New System.Drawing.Size(180, 22)
         Me.tsmiIniciar.Text = "Iniciar sesión"
         '
         'tsmiCerrar
         '
+        Me.tsmiCerrar.Image = Global.RelojAsistencias.My.Resources.Resources.Login_out
         Me.tsmiCerrar.Name = "tsmiCerrar"
-        Me.tsmiCerrar.Size = New System.Drawing.Size(142, 22)
+        Me.tsmiCerrar.Size = New System.Drawing.Size(180, 22)
         Me.tsmiCerrar.Text = "Cerrar sesión"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(139, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
         '
         'tsmiSalir
         '
+        Me.tsmiSalir.Image = Global.RelojAsistencias.My.Resources.Resources._Exit
         Me.tsmiSalir.Name = "tsmiSalir"
-        Me.tsmiSalir.Size = New System.Drawing.Size(142, 22)
+        Me.tsmiSalir.Size = New System.Drawing.Size(180, 22)
         Me.tsmiSalir.Text = "Salir"
         '
         'HerramientasToolStripMenuItem
@@ -94,8 +97,9 @@ Partial Class frmPrincipal
         '
         'tsmiOpciones
         '
+        Me.tsmiOpciones.Image = Global.RelojAsistencias.My.Resources.Resources.Configurar
         Me.tsmiOpciones.Name = "tsmiOpciones"
-        Me.tsmiOpciones.Size = New System.Drawing.Size(124, 22)
+        Me.tsmiOpciones.Size = New System.Drawing.Size(180, 22)
         Me.tsmiOpciones.Text = "Opciones"
         '
         'tsmAyuda
@@ -107,16 +111,17 @@ Partial Class frmPrincipal
         '
         'tsmiAcerca
         '
+        Me.tsmiAcerca.Image = Global.RelojAsistencias.My.Resources.Resources.Ayuda
         Me.tsmiAcerca.Name = "tsmiAcerca"
-        Me.tsmiAcerca.Size = New System.Drawing.Size(135, 22)
+        Me.tsmiAcerca.Size = New System.Drawing.Size(180, 22)
         Me.tsmiAcerca.Text = "Acerca de..."
         '
         'ssPrincipal
         '
         Me.ssPrincipal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsslUsuariotext, Me.tsslNombreUsuario})
-        Me.ssPrincipal.Location = New System.Drawing.Point(0, 416)
+        Me.ssPrincipal.Location = New System.Drawing.Point(0, 360)
         Me.ssPrincipal.Name = "ssPrincipal"
-        Me.ssPrincipal.Size = New System.Drawing.Size(653, 22)
+        Me.ssPrincipal.Size = New System.Drawing.Size(683, 22)
         Me.ssPrincipal.TabIndex = 1
         Me.ssPrincipal.Text = "StatusStrip1"
         '
@@ -136,10 +141,13 @@ Partial Class frmPrincipal
         '
         'pnlPrincipal
         '
-        Me.pnlPrincipal.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlPrincipal.Location = New System.Drawing.Point(0, 24)
+        Me.pnlPrincipal.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pnlPrincipal.Location = New System.Drawing.Point(5, 35)
         Me.pnlPrincipal.Name = "pnlPrincipal"
-        Me.pnlPrincipal.Size = New System.Drawing.Size(653, 392)
+        Me.pnlPrincipal.Size = New System.Drawing.Size(671, 318)
         Me.pnlPrincipal.TabIndex = 2
         '
         'niPrincipal
@@ -165,7 +173,7 @@ Partial Class frmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(653, 438)
+        Me.ClientSize = New System.Drawing.Size(683, 382)
         Me.Controls.Add(Me.pnlPrincipal)
         Me.Controls.Add(Me.ssPrincipal)
         Me.Controls.Add(Me.msPrincipal)

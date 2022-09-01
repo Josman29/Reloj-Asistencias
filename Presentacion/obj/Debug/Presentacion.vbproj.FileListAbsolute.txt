@@ -28,3 +28,19 @@ C:\Users\Notebook\Source\Repos\Reloj-Asistencias\Presentacion\obj\Debug\Presenta
 C:\Users\Notebook\Source\Repos\Reloj-Asistencias\Presentacion\obj\Debug\Presentacion.pdb
 C:\Users\Notebook\Source\Repos\Reloj-Asistencias\Presentacion\obj\Debug\Presentacion.frmOpciones.resources
 C:\Users\Notebook\Source\Repos\Reloj-Asistencias\Presentacion\obj\Debug\Presentacion.frmLogin.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.AssemblyReference.cache
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.SuggestedBindingRedirects.cache
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmLogin.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmOpciones.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmPrincipal.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.ssPrincipal.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.GenerateResource.cache
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Reloj Asistencias.exe.config
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Reloj Asistencias.exe
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Reloj Asistencias.pdb
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Reloj Asistencias.xml
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.Resources.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.CoreCompileInputs.cache
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Reloj Asistencias.exe
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Reloj Asistencias.xml
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Reloj Asistencias.pdb
