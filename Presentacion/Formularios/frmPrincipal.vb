@@ -2,6 +2,8 @@
 'Autor: Medina Rodolfo
 'Descripción: Practica de Orquestación de Aplicaciones
 
+Imports System.Diagnostics.Contracts
+
 Public Class frmPrincipal
 
 #Region "Botones"
@@ -46,6 +48,10 @@ Public Class frmPrincipal
     Private Sub tsmiIniciar_Click(sender As Object, e As EventArgs) Handles tsmiIniciar.Click
         'Utilizo la funcion abrir Formulario frmLogin
         AbrirFormulario(frmLogin)
+    End Sub
+
+    Private Sub tsmiAcerca_Click(sender As Object, e As EventArgs) Handles tsmiAcerca.Click
+        AbrirFormulario(Example)
     End Sub
 
 #End Region
