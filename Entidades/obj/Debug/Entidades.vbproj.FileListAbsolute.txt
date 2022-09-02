@@ -1,0 +1,10 @@
+D:\Proyectos\VB\Reloj Asistencias\Entidades\bin\Debug\Entidades.dll
+D:\Proyectos\VB\Reloj Asistencias\Entidades\bin\Debug\Entidades.pdb
+D:\Proyectos\VB\Reloj Asistencias\Entidades\bin\Debug\Entidades.xml
+D:\Proyectos\VB\Reloj Asistencias\Entidades\obj\Debug\Entidades.vbproj.AssemblyReference.cache
+D:\Proyectos\VB\Reloj Asistencias\Entidades\obj\Debug\Entidades.Resources.resources
+D:\Proyectos\VB\Reloj Asistencias\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.cache
+D:\Proyectos\VB\Reloj Asistencias\Entidades\obj\Debug\Entidades.vbproj.CoreCompileInputs.cache
+D:\Proyectos\VB\Reloj Asistencias\Entidades\obj\Debug\Entidades.dll
+D:\Proyectos\VB\Reloj Asistencias\Entidades\obj\Debug\Entidades.xml
+D:\Proyectos\VB\Reloj Asistencias\Entidades\obj\Debug\Entidades.pdb

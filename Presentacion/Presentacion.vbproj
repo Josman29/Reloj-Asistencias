@@ -228,8 +228,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Datos\Datos.vbproj">
-      <Project>{95c64580-dd2c-4e81-a3d7-5e128cf589a9}</Project>
+      <Project>{0799b613-af94-40fe-bceb-0c2ca88850dd}</Project>
       <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{9c66c952-ecf0-447c-a978-45a6f4646e04}</Project>
+      <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
