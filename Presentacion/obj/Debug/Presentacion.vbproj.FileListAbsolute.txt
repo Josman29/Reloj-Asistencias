@@ -44,10 +44,8 @@ C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Reloj As
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Reloj Asistencias.exe
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Reloj Asistencias.pdb
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Reloj Asistencias.xml
-C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Datos.exe
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Datos.pdb
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Datos.xml
-C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Datos.exe.config
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.CopyComplete
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\RelojAsistencias.Example.resources
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Datos.pdb
@@ -58,3 +56,7 @@ D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Datos.dll
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Entidades.dll
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Entidades.pdb
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Entidades.xml
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Datos.dll
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Entidades.dll
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Entidades.pdb
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\bin\Debug\Entidades.xml
