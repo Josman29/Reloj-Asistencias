@@ -31,6 +31,17 @@ Public Class frmPrincipal
         AbrirFormulario(frmLogin)
     End Sub
 
+    Public Sub CerrarSesion()
+        Me.Text = titulo
+        Me.tsslNombreUsuario.Text = ""
+        Me.tsslNombreUsuario.Visible = False
+        Me.tsslUsuariotext.Visible = False
+        Me.tsmiIniciar.Enabled = False
+        Me.tsmiCerrar.Enabled = True
+        Me.AbrirFormulario(frmLogin)
+    End Sub
+
+
     Public Sub AbrirFormulario(f As Form)
         'Limpio los controles existentes en el panel
         pnlPrincipal.Controls.Clear()
@@ -51,7 +62,11 @@ Public Class frmPrincipal
     End Sub
 
     Private Sub tsmiAcerca_Click(sender As Object, e As EventArgs) Handles tsmiAcerca.Click
-        AbrirFormulario(Example)
+        abAcercade.ShowDialog()
+    End Sub
+
+    Private Sub tsmiCerrar_Click(sender As Object, e As EventArgs) Handles tsmiCerrar.Click
+        CerrarSesion()
     End Sub
 
 #End Region

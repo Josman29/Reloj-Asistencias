@@ -26,14 +26,9 @@ Partial Class frmPrincipal
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmPrincipal))
         Me.msPrincipal = New System.Windows.Forms.MenuStrip()
         Me.tsmArchivo = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiIniciar = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiCerrar = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.tsmiSalir = New System.Windows.Forms.ToolStripMenuItem()
         Me.HerramientasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiOpciones = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmAyuda = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiAcerca = New System.Windows.Forms.ToolStripMenuItem()
         Me.ssPrincipal = New System.Windows.Forms.StatusStrip()
         Me.tsslUsuariotext = New System.Windows.Forms.ToolStripStatusLabel()
         Me.tsslNombreUsuario = New System.Windows.Forms.ToolStripStatusLabel()
@@ -41,6 +36,11 @@ Partial Class frmPrincipal
         Me.niPrincipal = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.cmsNotifyIcon = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.SalirToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiIniciar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiCerrar = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiSalir = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiOpciones = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiAcerca = New System.Windows.Forms.ToolStripMenuItem()
         Me.msPrincipal.SuspendLayout()
         Me.ssPrincipal.SuspendLayout()
         Me.cmsNotifyIcon.SuspendLayout()
@@ -62,31 +62,10 @@ Partial Class frmPrincipal
         Me.tsmArchivo.Size = New System.Drawing.Size(60, 20)
         Me.tsmArchivo.Text = "Archivo"
         '
-        'tsmiIniciar
-        '
-        Me.tsmiIniciar.Image = Global.RelojAsistencias.My.Resources.Resources.Login
-        Me.tsmiIniciar.Name = "tsmiIniciar"
-        Me.tsmiIniciar.Size = New System.Drawing.Size(142, 22)
-        Me.tsmiIniciar.Text = "Iniciar sesión"
-        '
-        'tsmiCerrar
-        '
-        Me.tsmiCerrar.Image = Global.RelojAsistencias.My.Resources.Resources.Login_out
-        Me.tsmiCerrar.Name = "tsmiCerrar"
-        Me.tsmiCerrar.Size = New System.Drawing.Size(142, 22)
-        Me.tsmiCerrar.Text = "Cerrar sesión"
-        '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(139, 6)
-        '
-        'tsmiSalir
-        '
-        Me.tsmiSalir.Image = Global.RelojAsistencias.My.Resources.Resources._Exit
-        Me.tsmiSalir.Name = "tsmiSalir"
-        Me.tsmiSalir.Size = New System.Drawing.Size(142, 22)
-        Me.tsmiSalir.Text = "Salir"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
         '
         'HerramientasToolStripMenuItem
         '
@@ -95,26 +74,12 @@ Partial Class frmPrincipal
         Me.HerramientasToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
         Me.HerramientasToolStripMenuItem.Text = "Herramientas"
         '
-        'tsmiOpciones
-        '
-        Me.tsmiOpciones.Image = Global.RelojAsistencias.My.Resources.Resources.Configurar
-        Me.tsmiOpciones.Name = "tsmiOpciones"
-        Me.tsmiOpciones.Size = New System.Drawing.Size(124, 22)
-        Me.tsmiOpciones.Text = "Opciones"
-        '
         'tsmAyuda
         '
         Me.tsmAyuda.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiAcerca})
         Me.tsmAyuda.Name = "tsmAyuda"
         Me.tsmAyuda.Size = New System.Drawing.Size(53, 20)
         Me.tsmAyuda.Text = "Ayuda"
-        '
-        'tsmiAcerca
-        '
-        Me.tsmiAcerca.Image = Global.RelojAsistencias.My.Resources.Resources.Ayuda
-        Me.tsmiAcerca.Name = "tsmiAcerca"
-        Me.tsmiAcerca.Size = New System.Drawing.Size(135, 22)
-        Me.tsmiAcerca.Text = "Acerca de..."
         '
         'ssPrincipal
         '
@@ -168,6 +133,42 @@ Partial Class frmPrincipal
         Me.SalirToolStripMenuItem1.Name = "SalirToolStripMenuItem1"
         Me.SalirToolStripMenuItem1.Size = New System.Drawing.Size(96, 22)
         Me.SalirToolStripMenuItem1.Text = "Salir"
+        '
+        'tsmiIniciar
+        '
+        Me.tsmiIniciar.Image = Global.RelojAsistencias.My.Resources.Resources.Login
+        Me.tsmiIniciar.Name = "tsmiIniciar"
+        Me.tsmiIniciar.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiIniciar.Text = "Iniciar sesión"
+        '
+        'tsmiCerrar
+        '
+        Me.tsmiCerrar.Enabled = False
+        Me.tsmiCerrar.Image = Global.RelojAsistencias.My.Resources.Resources.Login_out
+        Me.tsmiCerrar.Name = "tsmiCerrar"
+        Me.tsmiCerrar.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiCerrar.Text = "Cerrar sesión"
+        '
+        'tsmiSalir
+        '
+        Me.tsmiSalir.Image = Global.RelojAsistencias.My.Resources.Resources._Exit
+        Me.tsmiSalir.Name = "tsmiSalir"
+        Me.tsmiSalir.Size = New System.Drawing.Size(180, 22)
+        Me.tsmiSalir.Text = "Salir"
+        '
+        'tsmiOpciones
+        '
+        Me.tsmiOpciones.Image = Global.RelojAsistencias.My.Resources.Resources.Configurar
+        Me.tsmiOpciones.Name = "tsmiOpciones"
+        Me.tsmiOpciones.Size = New System.Drawing.Size(124, 22)
+        Me.tsmiOpciones.Text = "Opciones"
+        '
+        'tsmiAcerca
+        '
+        Me.tsmiAcerca.Image = Global.RelojAsistencias.My.Resources.Resources.Ayuda
+        Me.tsmiAcerca.Name = "tsmiAcerca"
+        Me.tsmiAcerca.Size = New System.Drawing.Size(135, 22)
+        Me.tsmiAcerca.Text = "Acerca de..."
         '
         'frmPrincipal
         '

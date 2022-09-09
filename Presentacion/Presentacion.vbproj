@@ -100,16 +100,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\Example.Designer.vb">
-      <DependentUpon>Example.vb</DependentUpon>
+    <Compile Include="Formularios\abAcercade.Designer.vb">
+      <DependentUpon>abAcercade.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Example.vb">
+    <Compile Include="Formularios\abAcercade.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmLogin.Designer.vb">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmMenu.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmOpciones.Designer.vb">
@@ -123,6 +129,12 @@
     </Compile>
     <Compile Include="Formularios\frmPrincipal.Designer.vb">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmUSR.Designer.vb">
+      <DependentUpon>frmUSR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmUSR.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modulos\modVariables.vb" />
@@ -150,17 +162,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Formularios\Example.resx">
-      <DependentUpon>Example.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\abAcercade.resx">
+      <DependentUpon>abAcercade.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmOpciones.resx">
       <DependentUpon>frmOpciones.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmUSR.resx">
+      <DependentUpon>frmUSR.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

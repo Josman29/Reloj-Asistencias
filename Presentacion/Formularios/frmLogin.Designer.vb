@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmLogin
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmLogin
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.gbLogin = New System.Windows.Forms.GroupBox()
         Me.lblPassword = New System.Windows.Forms.Label()
@@ -45,7 +45,7 @@ Partial Class frmLogin
         Me.gbLogin.Controls.Add(Me.chkMostrar)
         Me.gbLogin.Controls.Add(Me.txtPassword)
         Me.gbLogin.Controls.Add(Me.txtUsuario)
-        Me.gbLogin.Location = New System.Drawing.Point(221, 94)
+        Me.gbLogin.Location = New System.Drawing.Point(221, 105)
         Me.gbLogin.Name = "gbLogin"
         Me.gbLogin.Size = New System.Drawing.Size(247, 224)
         Me.gbLogin.TabIndex = 0
@@ -126,8 +126,8 @@ Partial Class frmLogin
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(9, 8)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 3
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.49637!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 74.33414!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(691, 413)
         Me.TableLayoutPanel1.TabIndex = 1
