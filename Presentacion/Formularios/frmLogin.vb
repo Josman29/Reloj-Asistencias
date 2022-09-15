@@ -14,6 +14,18 @@ Public Class frmLogin
     End Sub
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
+        Login()
+
+    End Sub
+
+    Private Sub txtPassword_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPassword.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            Login()
+        End If
+
+    End Sub
+
+    Private Sub Login()
         Dim Usuario As New clsUSR
         Dim tabla As New DataTable
         tabla = Usuario.GetLogin(txtUsuario.Text, txtPassword.Text)
@@ -34,6 +46,5 @@ Public Class frmLogin
         Else
             MsgBox("Usuario incorrecto")
         End If
-
     End Sub
 End Class
