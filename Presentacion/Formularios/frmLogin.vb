@@ -47,4 +47,5 @@ Public Class frmLogin
             MsgBox("Usuario incorrecto")
         End If
     End Sub
+
 End Class

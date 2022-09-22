@@ -23,61 +23,74 @@ Partial Class frmUSR
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUSR))
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.NuevoToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.GuardarToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.ImprimirToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.tsUsuarios = New System.Windows.Forms.ToolStrip()
+        Me.tsbNuevo = New System.Windows.Forms.ToolStripButton()
+        Me.tsbGuardar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbImprimir = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.tsbEliminar = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.CortarToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.CopiarToolStripButton = New System.Windows.Forms.ToolStripButton()
-        Me.PegarToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.tsbCortar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbCopiar = New System.Windows.Forms.ToolStripButton()
+        Me.tsbPegar = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.tsbCancelar = New System.Windows.Forms.ToolStripButton()
         Me.tsbSalir = New System.Windows.Forms.ToolStripButton()
         Me.dgvUsuarios = New System.Windows.Forms.DataGridView()
         Me.rdActivos = New System.Windows.Forms.RadioButton()
         Me.rdEliminados = New System.Windows.Forms.RadioButton()
-        Me.ToolStrip1.SuspendLayout()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.txtApellido = New System.Windows.Forms.TextBox()
+        Me.txtNombre = New System.Windows.Forms.TextBox()
+        Me.txtNickName = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.tsbHabilitar = New System.Windows.Forms.ToolStripButton()
+        Me.txtPassword2 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.tsUsuarios.SuspendLayout()
         CType(Me.dgvUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ToolStrip1
+        'tsUsuarios
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoToolStripButton, Me.GuardarToolStripButton, Me.ImprimirToolStripButton, Me.toolStripSeparator, Me.tsbEliminar, Me.ToolStripSeparator2, Me.CortarToolStripButton, Me.CopiarToolStripButton, Me.PegarToolStripButton, Me.toolStripSeparator1, Me.tsbCancelar, Me.tsbSalir})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(609, 25)
-        Me.ToolStrip1.TabIndex = 0
-        Me.ToolStrip1.Text = "ToolStrip1"
+        Me.tsUsuarios.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNuevo, Me.tsbGuardar, Me.tsbImprimir, Me.toolStripSeparator, Me.tsbEliminar, Me.ToolStripSeparator2, Me.tsbCortar, Me.tsbCopiar, Me.tsbPegar, Me.toolStripSeparator1, Me.tsbCancelar, Me.tsbSalir, Me.tsbHabilitar})
+        Me.tsUsuarios.Location = New System.Drawing.Point(0, 0)
+        Me.tsUsuarios.Name = "tsUsuarios"
+        Me.tsUsuarios.Size = New System.Drawing.Size(609, 25)
+        Me.tsUsuarios.TabIndex = 0
+        Me.tsUsuarios.Text = "ToolStrip1"
         '
-        'NuevoToolStripButton
+        'tsbNuevo
         '
-        Me.NuevoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.NuevoToolStripButton.Image = CType(resources.GetObject("NuevoToolStripButton.Image"), System.Drawing.Image)
-        Me.NuevoToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.NuevoToolStripButton.Name = "NuevoToolStripButton"
-        Me.NuevoToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.NuevoToolStripButton.Text = "&Nuevo"
+        Me.tsbNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbNuevo.Image = CType(resources.GetObject("tsbNuevo.Image"), System.Drawing.Image)
+        Me.tsbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbNuevo.Name = "tsbNuevo"
+        Me.tsbNuevo.Size = New System.Drawing.Size(23, 22)
+        Me.tsbNuevo.Text = "&Nuevo"
         '
-        'GuardarToolStripButton
+        'tsbGuardar
         '
-        Me.GuardarToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.GuardarToolStripButton.Image = CType(resources.GetObject("GuardarToolStripButton.Image"), System.Drawing.Image)
-        Me.GuardarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.GuardarToolStripButton.Name = "GuardarToolStripButton"
-        Me.GuardarToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.GuardarToolStripButton.Text = "&Guardar"
+        Me.tsbGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbGuardar.Image = CType(resources.GetObject("tsbGuardar.Image"), System.Drawing.Image)
+        Me.tsbGuardar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbGuardar.Name = "tsbGuardar"
+        Me.tsbGuardar.Size = New System.Drawing.Size(23, 22)
+        Me.tsbGuardar.Text = "&Guardar"
         '
-        'ImprimirToolStripButton
+        'tsbImprimir
         '
-        Me.ImprimirToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ImprimirToolStripButton.Image = CType(resources.GetObject("ImprimirToolStripButton.Image"), System.Drawing.Image)
-        Me.ImprimirToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ImprimirToolStripButton.Name = "ImprimirToolStripButton"
-        Me.ImprimirToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.ImprimirToolStripButton.Text = "&Imprimir"
+        Me.tsbImprimir.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbImprimir.Image = CType(resources.GetObject("tsbImprimir.Image"), System.Drawing.Image)
+        Me.tsbImprimir.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbImprimir.Name = "tsbImprimir"
+        Me.tsbImprimir.Size = New System.Drawing.Size(23, 22)
+        Me.tsbImprimir.Text = "&Imprimir"
         '
         'toolStripSeparator
         '
@@ -98,32 +111,32 @@ Partial Class frmUSR
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 25)
         '
-        'CortarToolStripButton
+        'tsbCortar
         '
-        Me.CortarToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CortarToolStripButton.Image = CType(resources.GetObject("CortarToolStripButton.Image"), System.Drawing.Image)
-        Me.CortarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.CortarToolStripButton.Name = "CortarToolStripButton"
-        Me.CortarToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.CortarToolStripButton.Text = "Cort&ar"
+        Me.tsbCortar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbCortar.Image = CType(resources.GetObject("tsbCortar.Image"), System.Drawing.Image)
+        Me.tsbCortar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbCortar.Name = "tsbCortar"
+        Me.tsbCortar.Size = New System.Drawing.Size(23, 22)
+        Me.tsbCortar.Text = "Cort&ar"
         '
-        'CopiarToolStripButton
+        'tsbCopiar
         '
-        Me.CopiarToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.CopiarToolStripButton.Image = CType(resources.GetObject("CopiarToolStripButton.Image"), System.Drawing.Image)
-        Me.CopiarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.CopiarToolStripButton.Name = "CopiarToolStripButton"
-        Me.CopiarToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.CopiarToolStripButton.Text = "&Copiar"
+        Me.tsbCopiar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbCopiar.Image = CType(resources.GetObject("tsbCopiar.Image"), System.Drawing.Image)
+        Me.tsbCopiar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbCopiar.Name = "tsbCopiar"
+        Me.tsbCopiar.Size = New System.Drawing.Size(23, 22)
+        Me.tsbCopiar.Text = "&Copiar"
         '
-        'PegarToolStripButton
+        'tsbPegar
         '
-        Me.PegarToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.PegarToolStripButton.Image = CType(resources.GetObject("PegarToolStripButton.Image"), System.Drawing.Image)
-        Me.PegarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.PegarToolStripButton.Name = "PegarToolStripButton"
-        Me.PegarToolStripButton.Size = New System.Drawing.Size(23, 22)
-        Me.PegarToolStripButton.Text = "&Pegar"
+        Me.tsbPegar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbPegar.Image = CType(resources.GetObject("tsbPegar.Image"), System.Drawing.Image)
+        Me.tsbPegar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbPegar.Name = "tsbPegar"
+        Me.tsbPegar.Size = New System.Drawing.Size(23, 22)
+        Me.tsbPegar.Text = "&Pegar"
         '
         'toolStripSeparator1
         '
@@ -159,17 +172,17 @@ Partial Class frmUSR
         Me.dgvUsuarios.BackgroundColor = System.Drawing.Color.White
         Me.dgvUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvUsuarios.Location = New System.Drawing.Point(12, 174)
+        Me.dgvUsuarios.Location = New System.Drawing.Point(12, 217)
         Me.dgvUsuarios.Name = "dgvUsuarios"
         Me.dgvUsuarios.ReadOnly = True
         Me.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvUsuarios.Size = New System.Drawing.Size(585, 99)
+        Me.dgvUsuarios.Size = New System.Drawing.Size(585, 142)
         Me.dgvUsuarios.TabIndex = 1
         '
         'rdActivos
         '
         Me.rdActivos.AutoSize = True
-        Me.rdActivos.Location = New System.Drawing.Point(12, 139)
+        Me.rdActivos.Location = New System.Drawing.Point(12, 179)
         Me.rdActivos.Name = "rdActivos"
         Me.rdActivos.Size = New System.Drawing.Size(99, 17)
         Me.rdActivos.TabIndex = 2
@@ -180,7 +193,7 @@ Partial Class frmUSR
         'rdEliminados
         '
         Me.rdEliminados.AutoSize = True
-        Me.rdEliminados.Location = New System.Drawing.Point(129, 139)
+        Me.rdEliminados.Location = New System.Drawing.Point(129, 179)
         Me.rdEliminados.Name = "rdEliminados"
         Me.rdEliminados.Size = New System.Drawing.Size(119, 17)
         Me.rdEliminados.TabIndex = 3
@@ -188,33 +201,154 @@ Partial Class frmUSR
         Me.rdEliminados.Text = "Usuarios Eliminados"
         Me.rdEliminados.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(16, 48)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(18, 13)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "ID"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(16, 76)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(44, 13)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Apellido"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(16, 104)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(44, 13)
+        Me.Label3.TabIndex = 6
+        Me.Label3.Text = "Nombre"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(16, 132)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(57, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "NickName"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(265, 48)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(53, 13)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "Password"
+        '
+        'txtID
+        '
+        Me.txtID.Enabled = False
+        Me.txtID.Location = New System.Drawing.Point(80, 41)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(168, 20)
+        Me.txtID.TabIndex = 9
+        '
+        'txtApellido
+        '
+        Me.txtApellido.Location = New System.Drawing.Point(80, 69)
+        Me.txtApellido.Name = "txtApellido"
+        Me.txtApellido.Size = New System.Drawing.Size(168, 20)
+        Me.txtApellido.TabIndex = 10
+        '
+        'txtNombre
+        '
+        Me.txtNombre.Location = New System.Drawing.Point(80, 97)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(168, 20)
+        Me.txtNombre.TabIndex = 11
+        '
+        'txtNickName
+        '
+        Me.txtNickName.Location = New System.Drawing.Point(80, 123)
+        Me.txtNickName.Name = "txtNickName"
+        Me.txtNickName.Size = New System.Drawing.Size(168, 20)
+        Me.txtNickName.TabIndex = 12
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Location = New System.Drawing.Point(361, 41)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword.Size = New System.Drawing.Size(148, 20)
+        Me.txtPassword.TabIndex = 13
+        '
+        'tsbHabilitar
+        '
+        Me.tsbHabilitar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbHabilitar.Enabled = False
+        Me.tsbHabilitar.Image = Global.RelojAsistencias.My.Resources.Resources.Aprobado
+        Me.tsbHabilitar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbHabilitar.Name = "tsbHabilitar"
+        Me.tsbHabilitar.Size = New System.Drawing.Size(23, 22)
+        Me.tsbHabilitar.Text = "Recuperar Usuario"
+        '
+        'txtPassword2
+        '
+        Me.txtPassword2.Location = New System.Drawing.Point(361, 67)
+        Me.txtPassword2.Name = "txtPassword2"
+        Me.txtPassword2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassword2.Size = New System.Drawing.Size(148, 20)
+        Me.txtPassword2.TabIndex = 14
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(265, 72)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(90, 13)
+        Me.Label6.TabIndex = 15
+        Me.Label6.Text = "Repetir Password"
+        '
         'frmUSR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(609, 285)
+        Me.ClientSize = New System.Drawing.Size(609, 371)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.txtPassword2)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.txtNickName)
+        Me.Controls.Add(Me.txtNombre)
+        Me.Controls.Add(Me.txtApellido)
+        Me.Controls.Add(Me.txtID)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.rdEliminados)
         Me.Controls.Add(Me.rdActivos)
         Me.Controls.Add(Me.dgvUsuarios)
-        Me.Controls.Add(Me.ToolStrip1)
+        Me.Controls.Add(Me.tsUsuarios)
         Me.Name = "frmUSR"
         Me.Text = "frmUSR"
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
+        Me.tsUsuarios.ResumeLayout(False)
+        Me.tsUsuarios.PerformLayout()
         CType(Me.dgvUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents NuevoToolStripButton As ToolStripButton
-    Friend WithEvents GuardarToolStripButton As ToolStripButton
-    Friend WithEvents ImprimirToolStripButton As ToolStripButton
+    Friend WithEvents tsUsuarios As ToolStrip
+    Friend WithEvents tsbNuevo As ToolStripButton
+    Friend WithEvents tsbGuardar As ToolStripButton
+    Friend WithEvents tsbImprimir As ToolStripButton
     Friend WithEvents toolStripSeparator As ToolStripSeparator
-    Friend WithEvents CortarToolStripButton As ToolStripButton
-    Friend WithEvents CopiarToolStripButton As ToolStripButton
-    Friend WithEvents PegarToolStripButton As ToolStripButton
+    Friend WithEvents tsbCortar As ToolStripButton
+    Friend WithEvents tsbCopiar As ToolStripButton
+    Friend WithEvents tsbPegar As ToolStripButton
     Friend WithEvents toolStripSeparator1 As ToolStripSeparator
     Friend WithEvents tsbSalir As ToolStripButton
     Friend WithEvents tsbEliminar As ToolStripButton
@@ -223,4 +357,17 @@ Partial Class frmUSR
     Friend WithEvents dgvUsuarios As DataGridView
     Friend WithEvents rdActivos As RadioButton
     Friend WithEvents rdEliminados As RadioButton
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents txtApellido As TextBox
+    Friend WithEvents txtNombre As TextBox
+    Friend WithEvents txtNickName As TextBox
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents tsbHabilitar As ToolStripButton
+    Friend WithEvents txtPassword2 As TextBox
+    Friend WithEvents Label6 As Label
 End Class

@@ -73,4 +73,44 @@ Public Class clsUSR
             Return dt
         End With
     End Function
+
+    Public Function DelUsu(id As Integer, id_eliminador As Integer) As Boolean
+        With cmd
+            'Utilizamos el metodo de la clase clsConexion para conectarnos
+            Conectado()
+            'Establecemos el procedidmiento que vamos a ejecutar
+            cmd = New SqlCommand("SP_USU_DEL")
+            'Establecemos el tipo de comando que vamos a ejecutar, en este caso procedimiento almacenado
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.AddWithValue("@USR_ID", id)
+            cmd.Parameters.AddWithValue("@USR_BAJ_ID", id_eliminador)
+            'Agregamos la cadena de conexion
+            cmd.Connection = con
+            'Creamos una variable del tipo DataTable para almacenar el resultado
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        End With
+    End Function
+    Public Function RecUsu(id As Integer) As Boolean
+        With cmd
+            'Utilizamos el metodo de la clase clsConexion para conectarnos
+            Conectado()
+            'Establecemos el procedidmiento que vamos a ejecutar
+            cmd = New SqlCommand("SP_USU_REC")
+            'Establecemos el tipo de comando que vamos a ejecutar, en este caso procedimiento almacenado
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Parameters.AddWithValue("@USR_ID", id)
+            'Agregamos la cadena de conexion
+            cmd.Connection = con
+            'Creamos una variable del tipo DataTable para almacenar el resultado
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        End With
+    End Function
 End Class

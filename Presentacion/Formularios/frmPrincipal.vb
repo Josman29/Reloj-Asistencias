@@ -36,8 +36,8 @@ Public Class frmPrincipal
         Me.tsslNombreUsuario.Text = ""
         Me.tsslNombreUsuario.Visible = False
         Me.tsslUsuariotext.Visible = False
-        Me.tsmiIniciar.Enabled = False
-        Me.tsmiCerrar.Enabled = True
+        Me.tsmiIniciar.Enabled = True
+        Me.tsmiCerrar.Enabled = False
         Me.AbrirFormulario(frmLogin)
     End Sub
 
