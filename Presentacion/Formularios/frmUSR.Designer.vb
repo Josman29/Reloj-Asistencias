@@ -36,6 +36,7 @@ Partial Class frmUSR
         Me.toolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.tsbCancelar = New System.Windows.Forms.ToolStripButton()
         Me.tsbSalir = New System.Windows.Forms.ToolStripButton()
+        Me.tsbHabilitar = New System.Windows.Forms.ToolStripButton()
         Me.dgvUsuarios = New System.Windows.Forms.DataGridView()
         Me.rdActivos = New System.Windows.Forms.RadioButton()
         Me.rdEliminados = New System.Windows.Forms.RadioButton()
@@ -49,7 +50,6 @@ Partial Class frmUSR
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.txtNickName = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.tsbHabilitar = New System.Windows.Forms.ToolStripButton()
         Me.txtPassword2 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.tsUsuarios.SuspendLayout()
@@ -160,6 +160,16 @@ Partial Class frmUSR
         Me.tsbSalir.Name = "tsbSalir"
         Me.tsbSalir.Size = New System.Drawing.Size(23, 22)
         Me.tsbSalir.Text = "Salir"
+        '
+        'tsbHabilitar
+        '
+        Me.tsbHabilitar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbHabilitar.Enabled = False
+        Me.tsbHabilitar.Image = Global.RelojAsistencias.My.Resources.Resources.Aprobado
+        Me.tsbHabilitar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbHabilitar.Name = "tsbHabilitar"
+        Me.tsbHabilitar.Size = New System.Drawing.Size(23, 22)
+        Me.tsbHabilitar.Text = "Recuperar Usuario"
         '
         'dgvUsuarios
         '
@@ -282,16 +292,6 @@ Partial Class frmUSR
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(148, 20)
         Me.txtPassword.TabIndex = 13
-        '
-        'tsbHabilitar
-        '
-        Me.tsbHabilitar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbHabilitar.Enabled = False
-        Me.tsbHabilitar.Image = Global.RelojAsistencias.My.Resources.Resources.Aprobado
-        Me.tsbHabilitar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsbHabilitar.Name = "tsbHabilitar"
-        Me.tsbHabilitar.Size = New System.Drawing.Size(23, 22)
-        Me.tsbHabilitar.Text = "Recuperar Usuario"
         '
         'txtPassword2
         '

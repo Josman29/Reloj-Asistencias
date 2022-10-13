@@ -18,3 +18,7 @@ C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\obj\Debug\Datos.vbproj.Co
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\obj\Debug\Datos.dll
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\obj\Debug\Datos.xml
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\obj\Debug\Datos.pdb
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\bin\Debug\Entidades.dll
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\bin\Debug\Entidades.pdb
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\bin\Debug\Entidades.xml
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\obj\Debug\Datos.vbproj.CopyComplete

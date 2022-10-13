@@ -1,5 +1,7 @@
 ﻿'Importamos las funciones sqlClient
 Imports System.Data.SqlClient
+Imports Entidades
+
 Public Class clsUSR
     'Heredamos la clase conexion para utilizar sus metodos
     Inherits clsConexion
@@ -113,4 +115,62 @@ Public Class clsUSR
             End If
         End With
     End Function
+
+    Public Function InsUsu(usuario As eusr) As Boolean
+        With cmd
+            'Utilizamos el metodo de la clase clsConexion para conectarnos
+            Conectado()
+            'Establecemos el procedidmiento que vamos a ejecutar
+            cmd = New SqlCommand("SP_USU_INS")
+            'Establecemos el tipo de comando que vamos a ejecutar, en este caso procedimiento almacenado
+            cmd.CommandType = CommandType.StoredProcedure
+
+
+            cmd.Parameters.AddWithValue("@USR_NIC", usuario.USR_NIC)
+            cmd.Parameters.AddWithValue("@USR_APE", usuario.USR_APE)
+            cmd.Parameters.AddWithValue("@USR_NOM", usuario.USR_NOM)
+            cmd.Parameters.AddWithValue("@USR_PAS", usuario.USR_PAS)
+            cmd.Parameters.AddWithValue("@USR_CRE_ID", usuario.USR_CRE_ID)
+
+
+
+            'Agregamos la cadena de conexion
+            cmd.Connection = con
+            'Creamos una variable del tipo DataTable para almacenar el resultado
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        End With
+    End Function
+    Public Function UpdUsu(usuario As EUSR) As Boolean
+        With cmd
+            'Utilizamos el metodo de la clase clsConexion para conectarnos
+            Conectado()
+            'Establecemos el procedidmiento que vamos a ejecutar
+            cmd = New SqlCommand("SP_USU_UPD")
+            'Establecemos el tipo de comando que vamos a ejecutar, en este caso procedimiento almacenado
+            cmd.CommandType = CommandType.StoredProcedure
+
+
+            cmd.Parameters.AddWithValue("@USR_NIC", usuario.USR_NIC)
+            cmd.Parameters.AddWithValue("@USR_APE", usuario.USR_APE)
+            cmd.Parameters.AddWithValue("@USR_NOM", usuario.USR_NOM)
+            cmd.Parameters.AddWithValue("@USR_PAS", usuario.USR_PAS)
+            cmd.Parameters.AddWithValue("@USR_ID", usuario.USR_ID)
+
+
+
+            'Agregamos la cadena de conexion
+            cmd.Connection = con
+            'Creamos una variable del tipo DataTable para almacenar el resultado
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        End With
+    End Function
+
 End Class
