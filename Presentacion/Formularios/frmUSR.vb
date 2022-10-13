@@ -4,8 +4,8 @@ Imports Entidades
 Public Class frmUSR
     Dim UsuarioFun As New clsUSR
     Dim UsuarioDatos As New EUSR
-
     Dim bandera As Boolean = True
+
 #Region "Procesos"
     Private Sub Inicio()
         tsbCopiar.Enabled = False
@@ -17,8 +17,7 @@ Public Class frmUSR
         tsbNuevo.Enabled = True
         GetActivos()
         rdActivos.Checked = True
-
-        Limpiar()
+        habilitaciones(Me, 1)
     End Sub
     Private Sub GetActivos()
         dgvUsuarios.DataSource = UsuarioFun.GetUsuarios()
@@ -44,27 +43,10 @@ Public Class frmUSR
         tsbNuevo.Enabled = False
         tsbHabilitar.Enabled = False
         bandera = True
-        txtApellido.Enabled = True
-        txtNombre.Enabled = True
-        txtNickName.Enabled = True
-        txtPassword.Enabled = True
+        habilitaciones(Me, 2)
         txtApellido.Focus()
     End Sub
-    Private Sub Limpiar()
-        txtApellido.Clear()
-        txtNombre.Clear()
-        txtID.Clear()
-        txtNickName.Clear()
-        txtPassword.Clear()
 
-        txtApellido.Enabled = False
-        txtNombre.Enabled = False
-        txtID.Enabled = False
-        txtNickName.Enabled = False
-        txtPassword.Enabled = False
-
-
-    End Sub
 #End Region
 
 #Region "Eventos"

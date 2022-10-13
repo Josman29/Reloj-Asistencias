@@ -23,6 +23,7 @@ Partial Class frmMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnUsuarios = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnUsuarios
@@ -34,11 +35,21 @@ Partial Class frmMenu
         Me.btnUsuarios.Text = "Usuarios"
         Me.btnUsuarios.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(203, 119)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(198, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(607, 359)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnUsuarios)
         Me.Name = "frmMenu"
         Me.Text = "frmMenu"
@@ -47,4 +58,5 @@ Partial Class frmMenu
     End Sub
 
     Friend WithEvents btnUsuarios As Button
+    Friend WithEvents Button1 As Button
 End Class

@@ -62,3 +62,4 @@ C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Presenta
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Reloj Asistencias.exe
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Reloj Asistencias.xml
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Reloj Asistencias.pdb
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\RelojAsistencias.Form1.resources
