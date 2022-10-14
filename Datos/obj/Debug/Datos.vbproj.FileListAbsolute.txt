@@ -22,3 +22,7 @@ C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\bin\Debug\Entidades.dll
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\bin\Debug\Entidades.pdb
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\bin\Debug\Entidades.xml
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Datos\obj\Debug\Datos.vbproj.CopyComplete
+D:\Proyectos\VB\Reloj Asistencias\Datos\bin\Debug\Entidades.dll
+D:\Proyectos\VB\Reloj Asistencias\Datos\bin\Debug\Entidades.pdb
+D:\Proyectos\VB\Reloj Asistencias\Datos\bin\Debug\Entidades.xml
+D:\Proyectos\VB\Reloj Asistencias\Datos\obj\Debug\Datos.vbproj.CopyComplete

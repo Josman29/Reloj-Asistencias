@@ -1,4 +1,6 @@
-﻿Imports Datos
+﻿Imports System.Data.Sql
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports Datos
 
 Public Class frmLogin
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
@@ -40,8 +42,9 @@ Public Class frmLogin
             frmPrincipal.tsslNombreUsuario.Visible = True
             frmPrincipal.tsslUsuariotext.Visible = True
             frmPrincipal.AbrirFormulario(frmMenu)
-            frmPrincipal.tsmiIniciar.Enabled = False
             frmPrincipal.tsmiCerrar.Enabled = True
+            frmPrincipal.tsmiIniciar.Enabled = False
+            frmPrincipal.tsmHerramientas.Visible = True
             Me.Close()
         Else
             MsgBox("Usuario incorrecto")

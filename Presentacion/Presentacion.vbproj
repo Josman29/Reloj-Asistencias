@@ -106,10 +106,10 @@
     <Compile Include="Formularios\abAcercade.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Formularios\frmCambiarContraseña.Designer.vb">
+      <DependentUpon>frmCambiarContraseña.vb</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Form1.vb">
+    <Compile Include="Formularios\frmCambiarContraseña.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmLogin.Designer.vb">
@@ -135,6 +135,12 @@
     </Compile>
     <Compile Include="Formularios\frmPrincipal.Designer.vb">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRegistroAsistencias.Designer.vb">
+      <DependentUpon>frmRegistroAsistencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRegistroAsistencias.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmUSR.Designer.vb">
@@ -171,8 +177,8 @@
     <EmbeddedResource Include="Formularios\abAcercade.resx">
       <DependentUpon>abAcercade.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Formularios\frmCambiarContraseña.resx">
+      <DependentUpon>frmCambiarContraseña.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRegistroAsistencias.resx">
+      <DependentUpon>frmRegistroAsistencias.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmUSR.resx">
       <DependentUpon>frmUSR.vb</DependentUpon>

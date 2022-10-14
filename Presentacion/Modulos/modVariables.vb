@@ -7,10 +7,6 @@
     Public idUser As Integer
     Public titulo As String = "Reloj de Asistencias"
 
-
-
-
-
     Public Sub habilitaciones(formu As Form, numero As Integer)
         For Each texto In formu.Controls
             If numero = 1 Then
@@ -31,4 +27,10 @@
             End If
         Next
     End Sub
+
+    Public Sub ClearLabel(labell As Label)
+        labell.Text = ""
+    End Sub
+
+
 End Module

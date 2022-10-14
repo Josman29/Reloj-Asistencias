@@ -30,7 +30,6 @@ D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Reloj Asistencias.xml
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Reloj Asistencias.pdb
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Datos.pdb
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Datos.xml
-D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.Example.resources
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\Presentacion.vbproj.CopyComplete
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Datos.dll
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\bin\Debug\Entidades.dll
@@ -63,3 +62,8 @@ C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Reloj As
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Reloj Asistencias.xml
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Reloj Asistencias.pdb
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\RelojAsistencias.Form1.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.abAcercade.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmMenu.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmUSR.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmCambiarContraseña.resources
+D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmRegistroAsistencias.resources
