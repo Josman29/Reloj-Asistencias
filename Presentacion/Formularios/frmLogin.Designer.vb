@@ -22,6 +22,7 @@ Partial Class frmLogin
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.gbLogin = New System.Windows.Forms.GroupBox()
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.lblUsuario = New System.Windows.Forms.Label()
@@ -31,8 +32,10 @@ Partial Class frmLogin
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.epLogin = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.gbLogin.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
+        CType(Me.epLogin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'gbLogin
@@ -132,6 +135,10 @@ Partial Class frmLogin
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(691, 413)
         Me.TableLayoutPanel1.TabIndex = 1
         '
+        'epLogin
+        '
+        Me.epLogin.ContainerControl = Me
+        '
         'frmLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -143,6 +150,7 @@ Partial Class frmLogin
         Me.gbLogin.ResumeLayout(False)
         Me.gbLogin.PerformLayout()
         Me.TableLayoutPanel1.ResumeLayout(False)
+        CType(Me.epLogin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -156,4 +164,5 @@ Partial Class frmLogin
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents txtUsuario As TextBox
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents epLogin As ErrorProvider
 End Class

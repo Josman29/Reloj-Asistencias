@@ -61,9 +61,9 @@ Partial Class frmMenu
         Me.gbLogin.Controls.Add(Me.btnPersonal)
         Me.gbLogin.Controls.Add(Me.btnUsuarios)
         Me.gbLogin.Controls.Add(Me.btnCambiarContraseña)
-        Me.gbLogin.Location = New System.Drawing.Point(229, 131)
+        Me.gbLogin.Location = New System.Drawing.Point(229, 135)
         Me.gbLogin.Name = "gbLogin"
-        Me.gbLogin.Size = New System.Drawing.Size(372, 239)
+        Me.gbLogin.Size = New System.Drawing.Size(372, 230)
         Me.gbLogin.TabIndex = 0
         Me.gbLogin.TabStop = False
         '

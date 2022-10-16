@@ -1,12 +1,62 @@
-﻿Public Class frmRegistroAsistencias
+﻿Imports Datos
+Imports Entidades
+
+Public Class frmRegistroAsistencias
+    Dim ficharFunciones As New clsFIC
+    Dim ficharDatos As New EFIC
+    Dim EmpleadoFunciones As New clsEMP
+    Dim EmpleadoDatos As New EEMP
     Private Sub frmRegistroAsistencias_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.lblHora.Text = Date.Now
-        Timer1.Interval = 1000  ' Un segundo
-        Timer1.Start()
-        txtCodigo.focus()
+        tmrDateTime.Interval = 1000  ' Un segundo
+        tmrDateTime.Start()
+        txtBarra.Focus()
+    End Sub
+    Private Sub tmrDateTime_Tick(sender As Object, e As EventArgs) Handles tmrDateTime.Tick
+        Me.lblHora.Text = Date.Now
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Me.lblHora.Text = Date.Now
+    Private Sub FichadaOk(objeto As Object)
+        objeto.BackColor = Color.GreenYellow
+        objeto.forecolor = Color.White
+    End Sub
+
+    Private Sub FichadaBad(objeto As Object)
+        txtCodigo.Clear()
+        objeto.BackColor = Color.Red
+        objeto.forecolor = Color.White
+    End Sub
+    Private Sub txtCodigo_Click(sender As Object, e As EventArgs) Handles txtPersonal.Click, txtCodigo.Click, pbUsuario.Click, pbLogo.Click, pbCodigo.Click, lblHora.Click
+        txtBarra.Focus()
+    End Sub
+
+    Private Sub txtbarra_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtbarra.KeyPress
+        Try
+            If e.KeyChar = ChrW(Keys.Enter) Then
+                Dim i As Integer
+                Dim cadena As String = ""
+                For i = 4 To 11
+                    cadena = cadena & (txtbarra.Text.Chars(i))
+                Next i
+                txtCodigo.Text = cadena
+                ficharDatos.FIC_EMP_ID = CInt(cadena)
+                If ficharFunciones.InsFic(ficharDatos) Then
+                    EmpleadoDatos.EMP_ID = txtCodigo.Text
+                    Dim data As DataTable = EmpleadoFunciones.GetNombreApellido(EmpleadoDatos)
+                    txtPersonal.Text = data.Rows(0)(0).ToString
+                    FichadaOk(sender)
+                    FichadaOk(txtPersonal)
+                    FichadaOk(txtCodigo)
+                End If
+                txtbarra.Clear()
+                txtbarra.Focus()
+            End If
+
+        Catch ex As Exception
+            FichadaBad(sender)
+            FichadaBad(txtPersonal)
+            FichadaBad(txtCodigo)
+            txtPersonal.Text = "Legajo Erróneo"
+        End Try
     End Sub
 End Class

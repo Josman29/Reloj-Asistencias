@@ -16,6 +16,10 @@ Public Class frmLogin
     End Sub
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
+        If txtUsuario.Text = "" Or txtPassword.Text = "" Then
+            epLogin.SetError(txtPassword, "Los campos son obligatorios.")
+            Return
+        End If
         Login()
 
     End Sub
@@ -45,9 +49,10 @@ Public Class frmLogin
             frmPrincipal.tsmiCerrar.Enabled = True
             frmPrincipal.tsmiIniciar.Enabled = False
             frmPrincipal.tsmHerramientas.Visible = True
+            MensajeError("Bienvenido " & nomUser)
             Me.Close()
         Else
-            MsgBox("Usuario incorrecto")
+            MensajeError("Credenciales incorrectas.")
         End If
     End Sub
 

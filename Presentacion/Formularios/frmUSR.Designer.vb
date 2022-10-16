@@ -22,11 +22,13 @@ Partial Class frmUSR
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUSR))
         Me.tsUsuarios = New System.Windows.Forms.ToolStrip()
         Me.tsbNuevo = New System.Windows.Forms.ToolStripButton()
         Me.tsbGuardar = New System.Windows.Forms.ToolStripButton()
         Me.tsbImprimir = New System.Windows.Forms.ToolStripButton()
+        Me.tsbHabilitar = New System.Windows.Forms.ToolStripButton()
         Me.toolStripSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.tsbEliminar = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
@@ -36,7 +38,6 @@ Partial Class frmUSR
         Me.toolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.tsbCancelar = New System.Windows.Forms.ToolStripButton()
         Me.tsbSalir = New System.Windows.Forms.ToolStripButton()
-        Me.tsbHabilitar = New System.Windows.Forms.ToolStripButton()
         Me.dgvUsuarios = New System.Windows.Forms.DataGridView()
         Me.rdActivos = New System.Windows.Forms.RadioButton()
         Me.rdEliminados = New System.Windows.Forms.RadioButton()
@@ -52,16 +53,22 @@ Partial Class frmUSR
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.txtPassword2 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.gbDatos = New System.Windows.Forms.GroupBox()
+        Me.gbListados = New System.Windows.Forms.GroupBox()
+        Me.ep = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.tsUsuarios.SuspendLayout()
         CType(Me.dgvUsuarios, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbDatos.SuspendLayout()
+        Me.gbListados.SuspendLayout()
+        CType(Me.ep, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tsUsuarios
         '
-        Me.tsUsuarios.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNuevo, Me.tsbGuardar, Me.tsbImprimir, Me.toolStripSeparator, Me.tsbEliminar, Me.ToolStripSeparator2, Me.tsbCortar, Me.tsbCopiar, Me.tsbPegar, Me.toolStripSeparator1, Me.tsbCancelar, Me.tsbSalir, Me.tsbHabilitar})
+        Me.tsUsuarios.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNuevo, Me.tsbGuardar, Me.tsbImprimir, Me.tsbHabilitar, Me.toolStripSeparator, Me.tsbEliminar, Me.ToolStripSeparator2, Me.tsbCortar, Me.tsbCopiar, Me.tsbPegar, Me.toolStripSeparator1, Me.tsbCancelar, Me.tsbSalir})
         Me.tsUsuarios.Location = New System.Drawing.Point(0, 0)
         Me.tsUsuarios.Name = "tsUsuarios"
-        Me.tsUsuarios.Size = New System.Drawing.Size(609, 25)
+        Me.tsUsuarios.Size = New System.Drawing.Size(574, 25)
         Me.tsUsuarios.TabIndex = 0
         Me.tsUsuarios.Text = "ToolStrip1"
         '
@@ -92,6 +99,16 @@ Partial Class frmUSR
         Me.tsbImprimir.Size = New System.Drawing.Size(23, 22)
         Me.tsbImprimir.Text = "&Imprimir"
         '
+        'tsbHabilitar
+        '
+        Me.tsbHabilitar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.tsbHabilitar.Enabled = False
+        Me.tsbHabilitar.Image = Global.RelojAsistencias.My.Resources.Resources.Aprobado
+        Me.tsbHabilitar.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.tsbHabilitar.Name = "tsbHabilitar"
+        Me.tsbHabilitar.Size = New System.Drawing.Size(23, 22)
+        Me.tsbHabilitar.Text = "Recuperar Usuario"
+        '
         'toolStripSeparator
         '
         Me.toolStripSeparator.Name = "toolStripSeparator"
@@ -100,7 +117,7 @@ Partial Class frmUSR
         'tsbEliminar
         '
         Me.tsbEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbEliminar.Image = Global.RelojAsistencias.My.Resources.Resources.Eliminar
+        Me.tsbEliminar.Image = CType(resources.GetObject("tsbEliminar.Image"), System.Drawing.Image)
         Me.tsbEliminar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbEliminar.Name = "tsbEliminar"
         Me.tsbEliminar.Size = New System.Drawing.Size(23, 22)
@@ -146,7 +163,7 @@ Partial Class frmUSR
         'tsbCancelar
         '
         Me.tsbCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbCancelar.Image = Global.RelojAsistencias.My.Resources.Resources.Zoom_menos
+        Me.tsbCancelar.Image = CType(resources.GetObject("tsbCancelar.Image"), System.Drawing.Image)
         Me.tsbCancelar.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbCancelar.Name = "tsbCancelar"
         Me.tsbCancelar.Size = New System.Drawing.Size(23, 22)
@@ -161,16 +178,6 @@ Partial Class frmUSR
         Me.tsbSalir.Size = New System.Drawing.Size(23, 22)
         Me.tsbSalir.Text = "Salir"
         '
-        'tsbHabilitar
-        '
-        Me.tsbHabilitar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.tsbHabilitar.Enabled = False
-        Me.tsbHabilitar.Image = Global.RelojAsistencias.My.Resources.Resources.Aprobado
-        Me.tsbHabilitar.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.tsbHabilitar.Name = "tsbHabilitar"
-        Me.tsbHabilitar.Size = New System.Drawing.Size(23, 22)
-        Me.tsbHabilitar.Text = "Recuperar Usuario"
-        '
         'dgvUsuarios
         '
         Me.dgvUsuarios.AllowUserToAddRows = False
@@ -182,17 +189,17 @@ Partial Class frmUSR
         Me.dgvUsuarios.BackgroundColor = System.Drawing.Color.White
         Me.dgvUsuarios.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.dgvUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvUsuarios.Location = New System.Drawing.Point(12, 217)
+        Me.dgvUsuarios.Location = New System.Drawing.Point(6, 42)
         Me.dgvUsuarios.Name = "dgvUsuarios"
         Me.dgvUsuarios.ReadOnly = True
         Me.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvUsuarios.Size = New System.Drawing.Size(585, 142)
+        Me.dgvUsuarios.Size = New System.Drawing.Size(540, 190)
         Me.dgvUsuarios.TabIndex = 1
         '
         'rdActivos
         '
         Me.rdActivos.AutoSize = True
-        Me.rdActivos.Location = New System.Drawing.Point(12, 179)
+        Me.rdActivos.Location = New System.Drawing.Point(6, 19)
         Me.rdActivos.Name = "rdActivos"
         Me.rdActivos.Size = New System.Drawing.Size(99, 17)
         Me.rdActivos.TabIndex = 2
@@ -203,7 +210,7 @@ Partial Class frmUSR
         'rdEliminados
         '
         Me.rdEliminados.AutoSize = True
-        Me.rdEliminados.Location = New System.Drawing.Point(129, 179)
+        Me.rdEliminados.Location = New System.Drawing.Point(123, 19)
         Me.rdEliminados.Name = "rdEliminados"
         Me.rdEliminados.Size = New System.Drawing.Size(119, 17)
         Me.rdEliminados.TabIndex = 3
@@ -214,7 +221,7 @@ Partial Class frmUSR
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(16, 48)
+        Me.Label1.Location = New System.Drawing.Point(9, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(18, 13)
         Me.Label1.TabIndex = 4
@@ -223,7 +230,7 @@ Partial Class frmUSR
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(16, 76)
+        Me.Label2.Location = New System.Drawing.Point(9, 54)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 5
@@ -232,7 +239,7 @@ Partial Class frmUSR
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(16, 104)
+        Me.Label3.Location = New System.Drawing.Point(9, 82)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(44, 13)
         Me.Label3.TabIndex = 6
@@ -241,7 +248,7 @@ Partial Class frmUSR
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(16, 132)
+        Me.Label4.Location = New System.Drawing.Point(9, 110)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(57, 13)
         Me.Label4.TabIndex = 7
@@ -250,7 +257,7 @@ Partial Class frmUSR
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(265, 48)
+        Me.Label5.Location = New System.Drawing.Point(258, 26)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(53, 13)
         Me.Label5.TabIndex = 8
@@ -259,35 +266,35 @@ Partial Class frmUSR
         'txtID
         '
         Me.txtID.Enabled = False
-        Me.txtID.Location = New System.Drawing.Point(80, 41)
+        Me.txtID.Location = New System.Drawing.Point(73, 19)
         Me.txtID.Name = "txtID"
         Me.txtID.Size = New System.Drawing.Size(168, 20)
         Me.txtID.TabIndex = 9
         '
         'txtApellido
         '
-        Me.txtApellido.Location = New System.Drawing.Point(80, 69)
+        Me.txtApellido.Location = New System.Drawing.Point(73, 47)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(168, 20)
         Me.txtApellido.TabIndex = 10
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(80, 97)
+        Me.txtNombre.Location = New System.Drawing.Point(73, 75)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(168, 20)
         Me.txtNombre.TabIndex = 11
         '
         'txtNickName
         '
-        Me.txtNickName.Location = New System.Drawing.Point(80, 123)
+        Me.txtNickName.Location = New System.Drawing.Point(73, 101)
         Me.txtNickName.Name = "txtNickName"
         Me.txtNickName.Size = New System.Drawing.Size(168, 20)
         Me.txtNickName.TabIndex = 12
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(361, 41)
+        Me.txtPassword.Location = New System.Drawing.Point(354, 19)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(148, 20)
@@ -295,7 +302,7 @@ Partial Class frmUSR
         '
         'txtPassword2
         '
-        Me.txtPassword2.Location = New System.Drawing.Point(361, 67)
+        Me.txtPassword2.Location = New System.Drawing.Point(354, 45)
         Me.txtPassword2.Name = "txtPassword2"
         Me.txtPassword2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword2.Size = New System.Drawing.Size(148, 20)
@@ -304,38 +311,70 @@ Partial Class frmUSR
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(265, 72)
+        Me.Label6.Location = New System.Drawing.Point(258, 50)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(90, 13)
         Me.Label6.TabIndex = 15
         Me.Label6.Text = "Repetir Password"
         '
+        'gbDatos
+        '
+        Me.gbDatos.Controls.Add(Me.txtID)
+        Me.gbDatos.Controls.Add(Me.Label6)
+        Me.gbDatos.Controls.Add(Me.Label1)
+        Me.gbDatos.Controls.Add(Me.txtPassword2)
+        Me.gbDatos.Controls.Add(Me.Label2)
+        Me.gbDatos.Controls.Add(Me.txtPassword)
+        Me.gbDatos.Controls.Add(Me.Label3)
+        Me.gbDatos.Controls.Add(Me.txtNickName)
+        Me.gbDatos.Controls.Add(Me.Label4)
+        Me.gbDatos.Controls.Add(Me.txtNombre)
+        Me.gbDatos.Controls.Add(Me.Label5)
+        Me.gbDatos.Controls.Add(Me.txtApellido)
+        Me.gbDatos.Location = New System.Drawing.Point(12, 36)
+        Me.gbDatos.Name = "gbDatos"
+        Me.gbDatos.Size = New System.Drawing.Size(535, 133)
+        Me.gbDatos.TabIndex = 16
+        Me.gbDatos.TabStop = False
+        Me.gbDatos.Text = "Datos de Usuario"
+        '
+        'gbListados
+        '
+        Me.gbListados.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.gbListados.Controls.Add(Me.rdActivos)
+        Me.gbListados.Controls.Add(Me.dgvUsuarios)
+        Me.gbListados.Controls.Add(Me.rdEliminados)
+        Me.gbListados.Location = New System.Drawing.Point(12, 176)
+        Me.gbListados.Name = "gbListados"
+        Me.gbListados.Size = New System.Drawing.Size(552, 238)
+        Me.gbListados.TabIndex = 17
+        Me.gbListados.TabStop = False
+        Me.gbListados.Text = "Usuarios"
+        '
+        'ep
+        '
+        Me.ep.ContainerControl = Me
+        '
         'frmUSR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(609, 371)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.txtPassword2)
-        Me.Controls.Add(Me.txtPassword)
-        Me.Controls.Add(Me.txtNickName)
-        Me.Controls.Add(Me.txtNombre)
-        Me.Controls.Add(Me.txtApellido)
-        Me.Controls.Add(Me.txtID)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.rdEliminados)
-        Me.Controls.Add(Me.rdActivos)
-        Me.Controls.Add(Me.dgvUsuarios)
+        Me.ClientSize = New System.Drawing.Size(574, 423)
+        Me.Controls.Add(Me.gbListados)
+        Me.Controls.Add(Me.gbDatos)
         Me.Controls.Add(Me.tsUsuarios)
         Me.Name = "frmUSR"
         Me.Text = "frmUSR"
         Me.tsUsuarios.ResumeLayout(False)
         Me.tsUsuarios.PerformLayout()
         CType(Me.dgvUsuarios, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbDatos.ResumeLayout(False)
+        Me.gbDatos.PerformLayout()
+        Me.gbListados.ResumeLayout(False)
+        Me.gbListados.PerformLayout()
+        CType(Me.ep, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -370,4 +409,7 @@ Partial Class frmUSR
     Friend WithEvents tsbHabilitar As ToolStripButton
     Friend WithEvents txtPassword2 As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents gbDatos As GroupBox
+    Friend WithEvents gbListados As GroupBox
+    Friend WithEvents ep As ErrorProvider
 End Class
