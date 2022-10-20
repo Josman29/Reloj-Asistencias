@@ -61,9 +61,10 @@ C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Presenta
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Reloj Asistencias.exe
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Reloj Asistencias.xml
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\Reloj Asistencias.pdb
-C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\RelojAsistencias.Form1.resources
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.abAcercade.resources
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmMenu.resources
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmUSR.resources
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmCambiarContraseña.resources
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmRegistroAsistencias.resources
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmCambiarContraseña.resources
+C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmRegistroAsistencias.resources

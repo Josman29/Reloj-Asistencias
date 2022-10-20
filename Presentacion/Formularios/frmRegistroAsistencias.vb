@@ -35,22 +35,28 @@ Public Class frmRegistroAsistencias
             If e.KeyChar = ChrW(Keys.Enter) Then
                 Dim i As Integer
                 Dim cadena As String = ""
-                For i = 4 To 11
-                    cadena = cadena & (txtbarra.Text.Chars(i))
-                Next i
+                If txtbarra.TextLength = 8 Then
+                    cadena = txtbarra.Text
+                Else
+                    For i = 3 To 10
+                        cadena = cadena & (txtbarra.Text.Chars(i))
+                    Next i
+                End If
+
                 txtCodigo.Text = cadena
                 ficharDatos.FIC_EMP_ID = CInt(cadena)
+                ficharDatos.FIC_ALT_PC = My.Computer.Name
                 If ficharFunciones.InsFic(ficharDatos) Then
-                    EmpleadoDatos.EMP_ID = txtCodigo.Text
-                    Dim data As DataTable = EmpleadoFunciones.GetNombreApellido(EmpleadoDatos)
-                    txtPersonal.Text = data.Rows(0)(0).ToString
-                    FichadaOk(sender)
-                    FichadaOk(txtPersonal)
-                    FichadaOk(txtCodigo)
+                        EmpleadoDatos.EMP_ID = txtCodigo.Text
+                        Dim data As DataTable = EmpleadoFunciones.GetNombreApellido(EmpleadoDatos)
+                        txtPersonal.Text = data.Rows(0)(0).ToString
+                        FichadaOk(sender)
+                        FichadaOk(txtPersonal)
+                        FichadaOk(txtCodigo)
+                    End If
+                    txtbarra.Clear()
+                    txtbarra.Focus()
                 End If
-                txtbarra.Clear()
-                txtbarra.Focus()
-            End If
 
         Catch ex As Exception
             FichadaBad(sender)

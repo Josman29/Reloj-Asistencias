@@ -27,24 +27,24 @@ Partial Class frmRegistroAsistencias
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.tbpRegistro = New System.Windows.Forms.TableLayoutPanel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pbUsuario = New System.Windows.Forms.PictureBox()
         Me.txtPersonal = New System.Windows.Forms.TextBox()
         Me.txtCodigo = New System.Windows.Forms.TextBox()
         Me.pbCodigo = New System.Windows.Forms.PictureBox()
+        Me.txtbarra = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lblHora = New System.Windows.Forms.Label()
         Me.pbLogo = New System.Windows.Forms.PictureBox()
         Me.tmrDateTime = New System.Windows.Forms.Timer(Me.components)
-        Me.txtbarra = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.tbpRegistro.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbCodigo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -90,6 +90,17 @@ Partial Class frmRegistroAsistencias
         Me.tbpRegistro.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.0!))
         Me.tbpRegistro.Size = New System.Drawing.Size(626, 368)
         Me.tbpRegistro.TabIndex = 1
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(3, 251)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(144, 111)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
         '
         'pbUsuario
         '
@@ -138,6 +149,18 @@ Partial Class frmRegistroAsistencias
         Me.pbCodigo.TabIndex = 5
         Me.pbCodigo.TabStop = False
         '
+        'txtbarra
+        '
+        Me.txtbarra.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.txtbarra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtbarra.Cursor = System.Windows.Forms.Cursors.No
+        Me.txtbarra.Font = New System.Drawing.Font("Tahoma", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtbarra.Location = New System.Drawing.Point(153, 264)
+        Me.txtbarra.Name = "txtbarra"
+        Me.txtbarra.Size = New System.Drawing.Size(470, 85)
+        Me.txtbarra.TabIndex = 6
+        Me.txtbarra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'GroupBox2
         '
         Me.GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
@@ -174,29 +197,6 @@ Partial Class frmRegistroAsistencias
         'tmrDateTime
         '
         '
-        'txtbarra
-        '
-        Me.txtbarra.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.txtbarra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtbarra.Cursor = System.Windows.Forms.Cursors.No
-        Me.txtbarra.Font = New System.Drawing.Font("Tahoma", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtbarra.Location = New System.Drawing.Point(153, 264)
-        Me.txtbarra.Name = "txtbarra"
-        Me.txtbarra.Size = New System.Drawing.Size(470, 85)
-        Me.txtbarra.TabIndex = 6
-        Me.txtbarra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 251)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(144, 111)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
-        '
         'frmRegistroAsistencias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -209,12 +209,12 @@ Partial Class frmRegistroAsistencias
         Me.GroupBox3.ResumeLayout(False)
         Me.tbpRegistro.ResumeLayout(False)
         Me.tbpRegistro.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbCodigo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

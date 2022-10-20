@@ -16,7 +16,7 @@ Public Class clsFIC
             'Establecemos el tipo de comando que vamos a ejecutar, en este caso procedimiento almacenado
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Parameters.AddWithValue("@FIC_EMP_ID", fichada.FIC_EMP_ID)
-
+            cmd.Parameters.AddWithValue("@FIC_ALT_PC", fichada.FIC_ALT_PC)
             'Agregamos la cadena de conexion
             cmd.Connection = con
             'Creamos una variable del tipo DataTable para almacenar el resultado
