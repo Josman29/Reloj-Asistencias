@@ -5,7 +5,7 @@
     Dim _EMP_NOM As String
     Dim _EMP_DIR As String
     Dim _EMP_SEC_ID As Integer
-    Dim _EMP_DAT_NAC As DateTime
+    Dim _EMP_DAT_NAC As Date
     Dim _EMP_CRE_ID As Integer
 
     Public Property EMP_ID As Integer

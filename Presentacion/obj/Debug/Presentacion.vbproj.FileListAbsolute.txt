@@ -68,3 +68,51 @@ D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmCam
 D:\Proyectos\VB\Reloj Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmRegistroAsistencias.resources
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmCambiarContraseña.resources
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Presentacion\obj\Debug\RelojAsistencias.frmRegistroAsistencias.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\Reloj Asistencias.exe.config
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\Reloj Asistencias.exe
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\Reloj Asistencias.pdb
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\Reloj Asistencias.xml
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\Datos.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\Entidades.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\Datos.pdb
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\Datos.xml
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\Entidades.pdb
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\Entidades.xml
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\Presentacion.vbproj.AssemblyReference.cache
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\Presentacion.vbproj.SuggestedBindingRedirects.cache
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.abAcercade.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.frmCambiarContraseña.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.frmLogin.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.frmMenu.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.frmOpciones.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.frmPrincipal.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.frmRegistroAsistencias.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.frmUSR.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.Resources.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.ssPrincipal.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\Presentacion.vbproj.GenerateResource.cache
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\Presentacion.vbproj.CoreCompileInputs.cache
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\Presentacion.vbproj.CopyComplete
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\Reloj Asistencias.exe
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\Reloj Asistencias.xml
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\Reloj Asistencias.pdb
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.FrmEMP.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.Shared.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\bin\Debug\stdole.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.FrmReporteUsuario.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Presentacion\obj\Debug\RelojAsistencias.FrmReporteEmpleado.resources

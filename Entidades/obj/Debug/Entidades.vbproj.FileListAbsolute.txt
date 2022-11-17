@@ -18,3 +18,13 @@ C:\Users\Notebook\source\repos\Reloj-Asistencias\Entidades\obj\Debug\Entidades.v
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Entidades\obj\Debug\Entidades.dll
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Entidades\obj\Debug\Entidades.xml
 C:\Users\Notebook\source\repos\Reloj-Asistencias\Entidades\obj\Debug\Entidades.pdb
+C:\IAES\2022\DATOS\Reloj Asistencia\Entidades\bin\Debug\Entidades.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Entidades\bin\Debug\Entidades.pdb
+C:\IAES\2022\DATOS\Reloj Asistencia\Entidades\bin\Debug\Entidades.xml
+C:\IAES\2022\DATOS\Reloj Asistencia\Entidades\obj\Debug\Entidades.vbproj.AssemblyReference.cache
+C:\IAES\2022\DATOS\Reloj Asistencia\Entidades\obj\Debug\Entidades.Resources.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Entidades\obj\Debug\Entidades.vbproj.GenerateResource.cache
+C:\IAES\2022\DATOS\Reloj Asistencia\Entidades\obj\Debug\Entidades.vbproj.CoreCompileInputs.cache
+C:\IAES\2022\DATOS\Reloj Asistencia\Entidades\obj\Debug\Entidades.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Entidades\obj\Debug\Entidades.xml
+C:\IAES\2022\DATOS\Reloj Asistencia\Entidades\obj\Debug\Entidades.pdb

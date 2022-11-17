@@ -38,6 +38,8 @@ Partial Class frmUSR
         Me.toolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.tsbCancelar = New System.Windows.Forms.ToolStripButton()
         Me.tsbSalir = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.dgvUsuarios = New System.Windows.Forms.DataGridView()
         Me.rdActivos = New System.Windows.Forms.RadioButton()
         Me.rdEliminados = New System.Windows.Forms.RadioButton()
@@ -65,7 +67,7 @@ Partial Class frmUSR
         '
         'tsUsuarios
         '
-        Me.tsUsuarios.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNuevo, Me.tsbGuardar, Me.tsbImprimir, Me.tsbHabilitar, Me.toolStripSeparator, Me.tsbEliminar, Me.ToolStripSeparator2, Me.tsbCortar, Me.tsbCopiar, Me.tsbPegar, Me.toolStripSeparator1, Me.tsbCancelar, Me.tsbSalir})
+        Me.tsUsuarios.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsbNuevo, Me.tsbGuardar, Me.tsbImprimir, Me.tsbHabilitar, Me.toolStripSeparator, Me.tsbEliminar, Me.ToolStripSeparator2, Me.tsbCortar, Me.tsbCopiar, Me.tsbPegar, Me.toolStripSeparator1, Me.tsbCancelar, Me.tsbSalir, Me.ToolStripButton1, Me.ToolStripButton2})
         Me.tsUsuarios.Location = New System.Drawing.Point(0, 0)
         Me.tsUsuarios.Name = "tsUsuarios"
         Me.tsUsuarios.Size = New System.Drawing.Size(574, 25)
@@ -177,6 +179,24 @@ Partial Class frmUSR
         Me.tsbSalir.Name = "tsbSalir"
         Me.tsbSalir.Size = New System.Drawing.Size(23, 22)
         Me.tsbSalir.Text = "Salir"
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton1.Text = "ToolStripButton1"
+        '
+        'ToolStripButton2
+        '
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton2.Text = "ToolStripButton2"
         '
         'dgvUsuarios
         '
@@ -412,4 +432,6 @@ Partial Class frmUSR
     Friend WithEvents gbDatos As GroupBox
     Friend WithEvents gbListados As GroupBox
     Friend WithEvents ep As ErrorProvider
+    Friend WithEvents ToolStripButton1 As ToolStripButton
+    Friend WithEvents ToolStripButton2 As ToolStripButton
 End Class

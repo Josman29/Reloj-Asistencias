@@ -22,8 +22,11 @@ Partial Class frmCambiarContraseña
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCambiarContraseña))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtpassnew = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.chkMostrar = New System.Windows.Forms.CheckBox()
         Me.btnCancelar = New System.Windows.Forms.Button()
         Me.btnCambiar = New System.Windows.Forms.Button()
@@ -33,11 +36,16 @@ Partial Class frmCambiarContraseña
         Me.txtPassword2 = New System.Windows.Forms.TextBox()
         Me.txtpassword = New System.Windows.Forms.TextBox()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
+        Me.Ep = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox1.SuspendLayout()
+        CType(Me.Ep, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.AutoSize = True
+        Me.GroupBox1.Controls.Add(Me.txtpassnew)
+        Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.chkMostrar)
         Me.GroupBox1.Controls.Add(Me.btnCancelar)
         Me.GroupBox1.Controls.Add(Me.btnCambiar)
@@ -47,16 +55,32 @@ Partial Class frmCambiarContraseña
         Me.GroupBox1.Controls.Add(Me.txtPassword2)
         Me.GroupBox1.Controls.Add(Me.txtpassword)
         Me.GroupBox1.Controls.Add(Me.txtUsuario)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(263, 253)
+        Me.GroupBox1.Size = New System.Drawing.Size(268, 268)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'txtpassnew
+        '
+        Me.txtpassnew.Location = New System.Drawing.Point(21, 109)
+        Me.txtpassnew.Name = "txtpassnew"
+        Me.txtpassnew.Size = New System.Drawing.Size(209, 20)
+        Me.txtpassnew.TabIndex = 3
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(22, 94)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(96, 13)
+        Me.Label1.TabIndex = 9
+        Me.Label1.Text = "Contraseña Nueva"
         '
         'chkMostrar
         '
         Me.chkMostrar.AutoSize = True
-        Me.chkMostrar.Location = New System.Drawing.Point(21, 153)
+        Me.chkMostrar.Location = New System.Drawing.Point(21, 174)
         Me.chkMostrar.Name = "chkMostrar"
         Me.chkMostrar.Size = New System.Drawing.Size(118, 17)
         Me.chkMostrar.TabIndex = 8
@@ -65,7 +89,7 @@ Partial Class frmCambiarContraseña
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(21, 205)
+        Me.btnCancelar.Location = New System.Drawing.Point(21, 226)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(209, 23)
         Me.btnCancelar.TabIndex = 7
@@ -74,7 +98,7 @@ Partial Class frmCambiarContraseña
         '
         'btnCambiar
         '
-        Me.btnCambiar.Location = New System.Drawing.Point(21, 175)
+        Me.btnCambiar.Location = New System.Drawing.Point(21, 197)
         Me.btnCambiar.Name = "btnCambiar"
         Me.btnCambiar.Size = New System.Drawing.Size(209, 23)
         Me.btnCambiar.TabIndex = 6
@@ -84,7 +108,7 @@ Partial Class frmCambiarContraseña
         'lblPassword2
         '
         Me.lblPassword2.AutoSize = True
-        Me.lblPassword2.Location = New System.Drawing.Point(18, 109)
+        Me.lblPassword2.Location = New System.Drawing.Point(18, 132)
         Me.lblPassword2.Name = "lblPassword2"
         Me.lblPassword2.Size = New System.Drawing.Size(98, 13)
         Me.lblPassword2.TabIndex = 5
@@ -93,7 +117,7 @@ Partial Class frmCambiarContraseña
         'lblPassword
         '
         Me.lblPassword.AutoSize = True
-        Me.lblPassword.Location = New System.Drawing.Point(18, 70)
+        Me.lblPassword.Location = New System.Drawing.Point(18, 55)
         Me.lblPassword.Name = "lblPassword"
         Me.lblPassword.Size = New System.Drawing.Size(61, 13)
         Me.lblPassword.TabIndex = 4
@@ -102,7 +126,7 @@ Partial Class frmCambiarContraseña
         'lblUsuario
         '
         Me.lblUsuario.AutoSize = True
-        Me.lblUsuario.Location = New System.Drawing.Point(18, 27)
+        Me.lblUsuario.Location = New System.Drawing.Point(18, 16)
         Me.lblUsuario.Name = "lblUsuario"
         Me.lblUsuario.Size = New System.Drawing.Size(43, 13)
         Me.lblUsuario.TabIndex = 3
@@ -110,29 +134,34 @@ Partial Class frmCambiarContraseña
         '
         'txtPassword2
         '
-        Me.txtPassword2.Location = New System.Drawing.Point(21, 126)
+        Me.txtPassword2.Location = New System.Drawing.Point(21, 148)
         Me.txtPassword2.Name = "txtPassword2"
         Me.txtPassword2.Size = New System.Drawing.Size(209, 20)
-        Me.txtPassword2.TabIndex = 2
+        Me.txtPassword2.TabIndex = 4
         '
         'txtpassword
         '
-        Me.txtpassword.Location = New System.Drawing.Point(21, 86)
+        Me.txtpassword.Location = New System.Drawing.Point(21, 71)
         Me.txtpassword.Name = "txtpassword"
         Me.txtpassword.Size = New System.Drawing.Size(209, 20)
         Me.txtpassword.TabIndex = 1
         '
         'txtUsuario
         '
-        Me.txtUsuario.Location = New System.Drawing.Point(21, 43)
+        Me.txtUsuario.Location = New System.Drawing.Point(21, 32)
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(209, 20)
         Me.txtUsuario.TabIndex = 0
+        '
+        'Ep
+        '
+        Me.Ep.ContainerControl = Me
         '
         'frmCambiarContraseña
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(292, 275)
         Me.Controls.Add(Me.GroupBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -143,11 +172,11 @@ Partial Class frmCambiarContraseña
         Me.Text = "Cambio de Contraseña"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.Ep, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents chkMostrar As CheckBox
     Friend WithEvents btnCancelar As Button
     Friend WithEvents btnCambiar As Button
@@ -157,4 +186,8 @@ Partial Class frmCambiarContraseña
     Friend WithEvents txtPassword2 As TextBox
     Friend WithEvents txtpassword As TextBox
     Friend WithEvents txtUsuario As TextBox
+    Friend WithEvents Ep As ErrorProvider
+    Friend WithEvents txtpassnew As TextBox
+    Friend WithEvents Label1 As Label
+    Public WithEvents GroupBox1 As GroupBox
 End Class

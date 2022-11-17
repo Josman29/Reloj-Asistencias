@@ -131,6 +131,14 @@ Public Class frmUSR
         End If
     End Sub
 
+    Private Sub tsbImprimir_Click(sender As Object, e As EventArgs) Handles tsbImprimir.Click
+        FrmReporteUsuario.Show()
+    End Sub
+
+    'Private Sub dgvEmpleados_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvEmpleados.CellContentClick
+
+    'End Sub
+
 #End Region
 
 End Class

@@ -30,4 +30,8 @@
     Private Sub btnFichador_Click(sender As Object, e As EventArgs) Handles btnFichador.Click
         frmPrincipal.AbrirFormulario(frmRegistroAsistencias)
     End Sub
+
+    Private Sub btnPersonal_Click(sender As Object, e As EventArgs) Handles btnPersonal.Click
+        frmPrincipal.AbrirFormulario(FrmEMP)
+    End Sub
 End Class

@@ -13,8 +13,8 @@
                 If TypeOf texto Is TextBox Then
                     texto.clear()
                     texto.enabled = False
-                    texto.forecolor = Color.Green
-                    texto.backcolor = Color.Black
+                    texto.forecolor = Color.Black
+                    texto.backcolor = Color.White
                 End If
             Else
                 If TypeOf texto Is TextBox Then
@@ -22,6 +22,15 @@
                         texto.enabled = True
                     End If
                 End If
+            End If
+        Next
+    End Sub
+    Public Sub Limpiar(grupo As GroupBox)
+        Dim Text As Object
+        For Each Text In grupo.Controls
+            If TypeOf Text Is TextBox Then
+                Dim txtemp As TextBox = CType(Text, TextBox)
+                txtemp.Text = ""
             End If
         Next
     End Sub

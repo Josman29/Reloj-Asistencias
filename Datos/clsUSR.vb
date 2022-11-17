@@ -144,6 +144,34 @@ Public Class clsUSR
             End If
         End With
     End Function
+
+    Public Function UpdPasNew(usu As String, pas As String, pasnew As String) As DataTable
+        With cmd
+            'Utilizamos el metodo de la clase clsConexion para conectarnos
+            Conectado()
+            'Establecemos el procedidmiento que vamos a ejecutar
+            cmd = New SqlCommand("SP_CPASS_UPD")
+            'Establecemos el tipo de comando que vamos a ejecutar, en este caso procedimiento almacenado
+            cmd.CommandType = CommandType.StoredProcedure
+            'Agreamos los valores de los parametros del procedimiento, en este caso dos 
+            cmd.Parameters.AddWithValue("@USR_NIC", usu)
+            cmd.Parameters.AddWithValue("@USR_PAS", pas)
+            cmd.Parameters.AddWithValue("@USR_NEWPAS", pasnew)
+            'Agregamos la cadena de conexion
+            cmd.Connection = con
+            'Establecemos el tiempo maximo de espera a respuesta de sql
+            cmd.CommandTimeout = 9999
+            'Creamos una variable del tipo DataTable para almacenar el resultado
+            Dim Pass As New DataTable
+            'Creamos una variable dataAdpater para ajustar el resultado al DataTable
+            Dim da As New SqlDataAdapter(cmd)
+            'Se agrega el resultado del procedimiento al DataTable
+            da.Fill(Pass)
+            'Como paso final de la funcion devolvemos el resultado
+            Return Pass
+        End With
+    End Function
+
     Public Function UpdUsu(usuario As EUSR) As Boolean
         With cmd
             'Utilizamos el metodo de la clase clsConexion para conectarnos

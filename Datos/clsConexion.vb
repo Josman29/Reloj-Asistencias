@@ -7,7 +7,7 @@ Public Class clsConexion
     Public Function Conectado()
         Try
             'Agregamos al objeto las credenciales del servidor sql
-            con = New SqlConnection("data source=DESKTOP-D5FL463\SQLEXPRESS;initial catalog=Sistema; Integrated Security = True")
+            con = New SqlConnection("data source=DESKTOP-RF7HR0I\JOSMAN;initial catalog=Sistema; Integrated Security = True")
             'Abrimos la conexion
             con.Open()
             'Retornamos el valor true para informar el exito de la conexion

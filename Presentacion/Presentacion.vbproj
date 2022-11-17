@@ -39,6 +39,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>Reloj Asistencias.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,7 +55,7 @@
     <OptionExplicit>On</OptionExplicit>
   </PropertyGroup>
   <PropertyGroup>
-    <OptionCompare>Binary</OptionCompare>
+    <OptionCompare>Text</OptionCompare>
   </PropertyGroup>
   <PropertyGroup>
     <OptionStrict>Off</OptionStrict>
@@ -75,10 +76,16 @@
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -105,6 +112,18 @@
     </Compile>
     <Compile Include="Formularios\abAcercade.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmReporteUsuario.Designer.vb">
+      <DependentUpon>FrmReporteUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmReporteUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ReporteUsuario.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteUsuario.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Formularios\frmCambiarContraseña.Designer.vb">
       <DependentUpon>frmCambiarContraseña.vb</DependentUpon>
@@ -143,11 +162,29 @@
     <Compile Include="Formularios\frmRegistroAsistencias.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\FrmEMP.Designer.vb">
+      <DependentUpon>FrmEMP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmEMP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmReporteEmpleado.Designer.vb">
+      <DependentUpon>FrmReporteEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmReporteEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\frmUSR.Designer.vb">
       <DependentUpon>frmUSR.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmUSR.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ReporteEmpleado.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteEmpleado.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Modulos\modVariables.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -177,6 +214,13 @@
     <EmbeddedResource Include="Formularios\abAcercade.resx">
       <DependentUpon>abAcercade.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmReporteUsuario.resx">
+      <DependentUpon>FrmReporteUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ReporteUsuario.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteUsuario.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmCambiarContraseña.resx">
       <DependentUpon>frmCambiarContraseña.vb</DependentUpon>
     </EmbeddedResource>
@@ -189,14 +233,24 @@
     <EmbeddedResource Include="Formularios\frmOpciones.resx">
       <DependentUpon>frmOpciones.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmEMP.resx">
+      <DependentUpon>FrmEMP.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmRegistroAsistencias.resx">
       <DependentUpon>frmRegistroAsistencias.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmReporteEmpleado.resx">
+      <DependentUpon>FrmReporteEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmUSR.resx">
       <DependentUpon>frmUSR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\ReporteEmpleado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteEmpleado.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -271,6 +325,9 @@
       <Project>{9c66c952-ecf0-447c-a978-45a6f4646e04}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -26,3 +26,17 @@ D:\Proyectos\VB\Reloj Asistencias\Datos\bin\Debug\Entidades.dll
 D:\Proyectos\VB\Reloj Asistencias\Datos\bin\Debug\Entidades.pdb
 D:\Proyectos\VB\Reloj Asistencias\Datos\bin\Debug\Entidades.xml
 D:\Proyectos\VB\Reloj Asistencias\Datos\obj\Debug\Datos.vbproj.CopyComplete
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\bin\Debug\Datos.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\bin\Debug\Datos.pdb
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\bin\Debug\Datos.xml
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\bin\Debug\Entidades.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\bin\Debug\Entidades.pdb
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\bin\Debug\Entidades.xml
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\obj\Debug\Datos.vbproj.AssemblyReference.cache
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\obj\Debug\Datos.Resources.resources
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\obj\Debug\Datos.vbproj.GenerateResource.cache
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\obj\Debug\Datos.vbproj.CoreCompileInputs.cache
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\obj\Debug\Datos.vbproj.CopyComplete
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\obj\Debug\Datos.dll
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\obj\Debug\Datos.xml
+C:\IAES\2022\DATOS\Reloj Asistencia\Datos\obj\Debug\Datos.pdb
